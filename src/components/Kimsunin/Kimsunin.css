@@ -1,0 +1,25 @@
+.kimsunin {
+  @apply h-full
+}
+
+.kimsunin > div {
+  @apply sticky top-[100px] h-[400px];
+}
+.kimsunin > div > div {
+  @apply flex justify-center
+}
+.kimsunin > div > div > a {
+  @apply w-[200px] h-[200px] flex justify-center items-end border-[2px] rounded-full overflow-hidden duration-300
+}
+.kimsunin > div > div > a:hover {
+  @apply border-[blue]/40 bg-[blue]/10 duration-300
+}
+.kimsunin > div > div > a > svg {
+  @apply w-[160px] h-[160px]
+}
+.kimsunin > div > h1 {
+  @apply text-center mt-[40px] text-[26px]
+}
+.kimsunin > div > h2 {
+  @apply text-center mt-[10px]
+}
