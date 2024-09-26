@@ -9,6 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        w: "width",
+        h: "height",
+        bg: "background-color",
+      },
       screens: {
         mobile: {max: "767px"},
         tablet: {min: "768px", max: "1023px"},
