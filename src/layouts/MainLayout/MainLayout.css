@@ -1,5 +1,5 @@
 .main-layout {
-  @apply my-[100px] duration-500
+  @apply my-[100px] transition-w duration-500
 }
 
 @screen pc {

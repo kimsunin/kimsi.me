@@ -9,3 +9,17 @@ body {
 body * {
   @apply border-black/10 dark:border-white/20;
 }
+
+a, button {
+  @apply block duration-300
+}
+a:hover {
+  @apply scale-105 duration-300 bg-black/5 dark:bg-white/10
+}
+button:hover {
+  @apply scale-105 duration-300 bg-black/5 dark:bg-white/10
+}
+
+.icon-box {
+  @apply w-[40px] h-[40px] mb-[10px] flex items-center justify-center border rounded-md
+}
