@@ -38,7 +38,7 @@ function GithubLinkBox(){
         })
             .then((res) => res.json())
             .then((json) => {
-                let result:any = {}
+                const result: { [key: string]: number }  = {}
                 for (const week of json?.data?.user?.contributionsCollection
                     ?.contributionCalendar?.weeks) {
                     for (const day of week.contributionDays) {
