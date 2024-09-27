@@ -20,6 +20,17 @@ button:hover {
   @apply scale-105 duration-300 bg-black/5 dark:bg-white/10
 }
 
+
+/*박스 css*/
+.box {
+  @apply w-full h-[160px] mb-[40px] p-[20px] flex justify-start border rounded-lg
+}
 .icon-box {
   @apply w-[40px] h-[40px] mb-[10px] flex items-center justify-center border rounded-md
+}
+.text-box > p {
+  @apply text-start
+}
+.text-box > p:nth-child(2) {
+  @apply text-[14px] text-black/50 dark:text-white/30
 }

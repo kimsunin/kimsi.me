@@ -1,8 +1,6 @@
-"use client"
-import GithubLinkBox from "@/components/GithubLinkBox/GithubLinkBox";
+import {GithubLinkBox, BlogLinkBox, ThemeSwitchBox, SoundSwitchBox, GmailLinkBox} from "@/component/Box";
+import CustomImage from "@/component/CustomImage/CustomImage";
 import "./page.css"
-import ThemeSwitchBox from "@/components/ThemeSwitchBox/ThemeSwitchBox";
-import SoundSwitchBox from "@/components/SoundSwitchBox/SoundSwitchBox";
 
 export default function Home() {
     return (
@@ -12,15 +10,15 @@ export default function Home() {
             </div>
             <div className={"util-layout"}>
                 <ThemeSwitchBox/>
-                    <SoundSwitchBox/>
+                <SoundSwitchBox/>
             </div>
             <div className={"jobs-layout"}>
                 <div>
-                    <div className={"h-[160px] mb-[20px] border rounded-lg"}>blog-layout</div>
-                    <div></div>
+                    <BlogLinkBox/>
+                    <GmailLinkBox/>
                 </div>
-                <div className={"border rounded-lg"}>
-                    photo-layout
+                <div>
+                    <CustomImage src={"/gif/retriver-sleep.gif"}/>
                 </div>
             </div>
         </div>

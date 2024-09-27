@@ -15,6 +15,9 @@
 .jobs-layout {
     @apply w-full h-[360px] mb-[40px] grid grid-cols-2 gap-[40px]
 }
+.jobs-layout > div:nth-child(2) > div > * {
+    @apply w-full h-[360px] rounded-lg
+}
 
 
 /*not-found-page*/

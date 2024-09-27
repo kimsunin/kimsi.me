@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./page.css"
-import {NotFoundImgIc} from "@/assets/svgs";
+import {NotFoundImgIc} from "../../public/svg";
 
 function NotFound() {
     return <div className={"not-found-page"}>
