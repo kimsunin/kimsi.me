@@ -1,6 +1,8 @@
+"use client"
 import GithubLinkBox from "@/components/GithubLinkBox/GithubLinkBox";
 import "./page.css"
 import ThemeSwitchBox from "@/components/ThemeSwitchBox/ThemeSwitchBox";
+import SoundSwitchBox from "@/components/SoundSwitchBox/SoundSwitchBox";
 
 export default function Home() {
     return (
@@ -10,9 +12,7 @@ export default function Home() {
             </div>
             <div className={"util-layout"}>
                 <ThemeSwitchBox/>
-                <div className={"blog-layout w-full h-[160px] border rounded-lg"}>
-                    sound-layout
-                </div>
+                    <SoundSwitchBox/>
             </div>
             <div className={"jobs-layout"}>
                 <div>

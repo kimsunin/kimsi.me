@@ -6,6 +6,7 @@ import MainLayout from "@/layouts/MainLayout/MainLayout";
 import DashboardLayout from "@/layouts/DashboardLayout/DashboardLayout";
 import ThemeProvider from "@/layouts/ThemeProvider/ThemeProvider";
 
+
 const pretendard = localFont({
   src: "../assets/fonts/PretendardVariable.woff2",
   display: "swap",
@@ -15,6 +16,14 @@ const pretendard = localFont({
 export const metadata: Metadata = {
   title: "kimsi.me",
   description: "develop space of kimsunin",
+  icons: {
+    icon: [
+      {
+        rel: 'icon',
+        url: "../assets/svgs/kimsunin.svg",
+      },
+    ]
+  },
 };
 
 export default function RootLayout({
@@ -23,16 +32,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${pretendard.variable}`}>
-    <body className={pretendard.className}>
-    <ThemeProvider>
-      <MainLayout>
-        <DashboardLayout>
-          {children}
-        </DashboardLayout>
-      </MainLayout>
-    </ThemeProvider>
-    </body>
-    </html>
+      <html lang="en" className={`${pretendard.variable}`}>
+      <body className={pretendard.className}>
+      <ThemeProvider>
+          <MainLayout>
+            <DashboardLayout>
+              {children}
+            </DashboardLayout>
+          </MainLayout>
+      </ThemeProvider>
+      </body>
+      </html>
   );
 }

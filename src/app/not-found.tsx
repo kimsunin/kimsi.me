@@ -1,11 +1,11 @@
 import Link from "next/link";
 import "./page.css"
-import {NotFounImgIc} from "@/assets/svgs";
+import {NotFoundImgIc} from "@/assets/svgs";
 
 function NotFound() {
     return <div className={"not-found-page"}>
         <div>
-            <NotFounImgIc/>
+            <NotFoundImgIc/>
         </div>
         <h1>404: not found</h1>
         <div>
