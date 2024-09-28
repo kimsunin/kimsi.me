@@ -21,6 +21,15 @@ export default function Home() {
                     <CustomImage src={"/gif/retriver-sleep.gif"}/>
                 </div>
             </div>
+            <div className={"craft-layout"}>
+                <h1>
+                    CRAFTS 🛠️
+                </h1>
+                <div>
+                    <div>농행동행</div>
+                    <div>책공유</div>
+                </div>
+            </div>
         </div>
     );
 };
