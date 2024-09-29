@@ -1,6 +1,7 @@
-import {GithubLinkBox, BlogLinkBox, ThemeSwitchBox, SoundSwitchBox, GmailLinkBox} from "@/component/Box";
+import {GithubLinkBox, BlogLinkBox, ThemeSwitchBox, SoundSwitchBox, GmailLinkBox, NhLinkBox, BookShareLinkBox} from "@/component/Box";
 import CustomImage from "@/component/CustomImage/CustomImage";
 import "./page.css"
+
 
 export default function Home() {
     return (
@@ -26,8 +27,16 @@ export default function Home() {
                     CRAFTS 🛠️
                 </h1>
                 <div>
-                    <div>농행동행</div>
-                    <div>책공유</div>
+                    <NhLinkBox/>
+                    <BookShareLinkBox/>
+                </div>
+            </div>
+            <div className={"stack-layout"}>
+                <h1>
+                    STACKS 💻
+                </h1>
+                <div>
+
                 </div>
             </div>
         </div>

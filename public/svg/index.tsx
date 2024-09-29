@@ -8,6 +8,8 @@ import SoundOnIc from "./sound-on.svg"
 import SoundOffIc from "./sound-off.svg"
 import BlogIc from "./blog.svg"
 import MailIc from "./mail.svg"
+import NongHaengIc from "./nonghaeng.svg"
+import BookIc from "./book.svg"
 
 
-export {ErrorImgIc, KimsuninIc, GithubIc, SunIc, MoonIc, NotFoundImgIc, SoundOnIc, SoundOffIc, BlogIc, MailIc}
+export {ErrorImgIc, KimsuninIc, GithubIc, SunIc, MoonIc, NotFoundImgIc, SoundOnIc, SoundOffIc, BlogIc, MailIc, NongHaengIc, BookIc}
