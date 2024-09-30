@@ -52,7 +52,7 @@ function BmwCanvas() {
       })
     );
     if (time != 0 && time % 12 == 0 && ctx?.canvas) {
-      let hd = { x: ctx.canvas.width, y: Math.floor(Math.random() * 5) * 20 };
+      const hd = { x: ctx.canvas.width, y: Math.floor(Math.random() * 5) * 20 };
       setHds((hds) => [...hds, hd]);
     }
   };
