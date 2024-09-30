@@ -1,44 +1,63 @@
-import {GithubLinkBox, BlogLinkBox, ThemeSwitchBox, SoundSwitchBox, GmailLinkBox, NhLinkBox, BookShareLinkBox} from "@/component/Box";
-import CustomImage from "@/component/CustomImage/CustomImage";
+"use client"
+import React from "react";
+import {
+    GithubLinkBox,
+    BlogLinkBox,
+    ThemeSwitchBox,
+    SoundSwitchBox,
+    GmailLinkBox,
+    NhLinkBox,
+    BookShareLinkBox,
+    CustomImage, BmwLinkBox
+} from "@/component";
 import "./page.css"
 
 
 export default function Home() {
-    return (
-        <div className={"home-page"}>
-            <div className={"github-layout"}>
-                <GithubLinkBox/>
-            </div>
-            <div className={"util-layout"}>
-                <ThemeSwitchBox/>
-                <SoundSwitchBox/>
-            </div>
-            <div className={"jobs-layout"}>
-                <div>
-                    <BlogLinkBox/>
-                    <GmailLinkBox/>
-                </div>
-                <div>
-                    <CustomImage src={"/gif/retriver-sleep.gif"}/>
-                </div>
-            </div>
-            <div className={"craft-layout"}>
-                <h1>
-                    CRAFTS 🛠️
-                </h1>
-                <div>
-                    <NhLinkBox/>
-                    <BookShareLinkBox/>
-                </div>
-            </div>
-            <div className={"stack-layout"}>
-                <h1>
-                    STACKS 💻
-                </h1>
-                <div>
+    const [visible, setVisible] = React.useState(false);
 
-                </div>
-            </div>
-        </div>
+    React.useEffect(() => {
+        setVisible(true)
+    }, []);
+
+
+    return (
+        <main>
+            <section className={visible ? "is-visible" : "is-invisible"}>
+                <article className={"github-layout"}>
+                    <GithubLinkBox/>
+                </article>
+                <article className={"util-layout"}>
+                    <ThemeSwitchBox/>
+                    <SoundSwitchBox/>
+                </article>
+                <article className={"jobs-layout"}>
+                    <div>
+                        <BlogLinkBox/>
+                        <GmailLinkBox/>
+                    </div>
+                    <div>
+                        <CustomImage src={"/gif/retriver-sleep.gif"}/>
+                    </div>
+                </article>
+                <article className={"craft-layout"}>
+                    <h4>
+                        CRAFTS 🛠️
+                    </h4>
+                    <div>
+                        <NhLinkBox/>
+                        <BookShareLinkBox/>
+                        <BmwLinkBox/>
+                    </div>
+                </article>
+                <article className={"stack-layout"}>
+                    <h4>
+                        STACKS 💻
+                    </h4>
+                    <div>
+                    </div>
+                </article>
+            </section>
+        </main>
     );
 };

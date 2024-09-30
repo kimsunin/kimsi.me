@@ -5,25 +5,49 @@
 body {
   @apply scroll-smooth text-black/80 dark:text-white/60;
 }
-
 body * {
   @apply border-black/10 dark:border-white/20;
 }
 
+/*a, button*/
 a, button {
-  @apply block duration-300
+  @apply block duration-300;
+  transition-property: background-color, transform;
 }
-a:hover {
-  @apply scale-105 duration-300 bg-black/5 dark:bg-white/10
-}
-button:hover {
-  @apply scale-105 duration-300 bg-black/5 dark:bg-white/10
+a:hover, button:hover {
+  @apply scale-105 duration-300 bg-black/5 dark:bg-white/10;
+  transition-property: background-color, transform;
 }
 
+/*h1 ~ h4*/
+h1 {
+  @apply text-[24px]
+}
+h2 {
+  @apply text-[22px]
+}
+h3 {
+  @apply text-[20px]
+}
+h4 {
+  @apply text-[18px]
+}
+
+hr {
+  @apply my-[20px]
+}
+
+/*custom visible, invisible*/
+.is-visible {
+  @apply opacity-100 duration-1000;
+}
+.is-invisible {
+  @apply opacity-0;
+}
 
 /*박스 css*/
 .box {
-  @apply w-full h-[160px] mb-[40px] p-[20px] flex justify-start border rounded-lg
+  @apply w-full h-[160px] p-[20px] flex justify-start border rounded-lg
 }
 .icon-box {
   @apply w-[40px] h-[40px] mb-[10px] flex items-center justify-center border rounded-md

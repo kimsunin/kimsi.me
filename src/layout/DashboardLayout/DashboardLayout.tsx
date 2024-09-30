@@ -1,6 +1,6 @@
 import React from "react";
 import "./DashboardLayout.css"
-import Kimsunin from "@/component/Kimsunin/Kimsunin";
+import {Kimsunin} from "@/component";
 
 function DashboardLayout({ children }: { children: React.ReactNode }) {
   return <div className="dashboard-layout">

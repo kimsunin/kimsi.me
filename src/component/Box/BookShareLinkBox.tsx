@@ -10,7 +10,7 @@ function BookShareLinkBox() {
             <div className={"text-box"}>
                 <p>Book-Share</p>
                 <p>
-                    도서대출 웹 서비스
+                    도서대출 서비스
                 </p>
             </div>
         </div>

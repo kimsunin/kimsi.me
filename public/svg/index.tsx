@@ -10,6 +10,21 @@ import BlogIc from "./blog.svg"
 import MailIc from "./mail.svg"
 import NongHaengIc from "./nonghaeng.svg"
 import BookIc from "./book.svg"
+import BmwIc from "./bmw.svg"
 
 
-export {ErrorImgIc, KimsuninIc, GithubIc, SunIc, MoonIc, NotFoundImgIc, SoundOnIc, SoundOffIc, BlogIc, MailIc, NongHaengIc, BookIc}
+export {
+    ErrorImgIc,
+    KimsuninIc,
+    GithubIc,
+    SunIc,
+    MoonIc,
+    NotFoundImgIc,
+    SoundOnIc,
+    SoundOffIc,
+    BlogIc,
+    MailIc,
+    NongHaengIc,
+    BookIc,
+    BmwIc
+};

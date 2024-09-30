@@ -1,7 +1,7 @@
 "use client";
 import {useSound} from "@/hook/useSound";
 import {SoundOnSound} from "sound/index";
-import {SoundOnIc, SoundOffIc} from "../../../../public/svg";
+import {SoundOnIc, SoundOffIc} from "svg/index";
 
 
 function SoundSwitchBox() {

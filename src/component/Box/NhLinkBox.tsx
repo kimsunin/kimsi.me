@@ -9,7 +9,7 @@ function NhLinkBox(){
             </div>
             <div className={"text-box"}>
                 <p>농행동행</p>
-                <p>농촌관광 플랫폼 농행동행</p>
+                <p>농촌관광 플랫폼</p>
             </div>
         </div>
     </Link>;

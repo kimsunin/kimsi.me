@@ -18,8 +18,8 @@
   @apply w-[160px] h-[160px]
 }
 .kimsunin > div > h1 {
-  @apply text-center mt-[40px] text-[26px]
+  @apply text-center mt-[40px]
 }
-.kimsunin > div > h2 {
+.kimsunin > div > p {
   @apply text-center mt-[10px]
 }

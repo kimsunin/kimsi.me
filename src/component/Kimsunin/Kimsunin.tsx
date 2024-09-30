@@ -11,7 +11,7 @@ function Kimsunin(){
         </Link>
       </div>
       <h1>KIMSUNIN</h1>
-      <h2>김선인의 개발공간</h2>
+      <p>김선인의 개발공간</p>
     </div>
   </div>;
 }

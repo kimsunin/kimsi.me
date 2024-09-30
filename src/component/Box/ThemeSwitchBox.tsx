@@ -1,6 +1,6 @@
 "use client"
 import {useTheme} from "next-themes";
-import {MoonIc, SunIc} from "../../../../public/svg";
+import {MoonIc, SunIc} from "svg/index";
 
 function ThemeSwitchBox(){
     const {setTheme, resolvedTheme} = useTheme();

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {MailIc} from "../../../../public/svg";
+import {MailIc} from "svg/index";
 
 function GmailLinkBox() {
     return <Link href={"mailto:suninkim10@gmail.com"} className={"box"}>

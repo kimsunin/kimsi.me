@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {BlogIc} from "../../../../public/svg";
+import {BlogIc} from "svg/index";
 
 function BlogLinkBox() {
     return <Link href={"https://blog.kimsi.me"} target={"_blank"} className={"box"}>
