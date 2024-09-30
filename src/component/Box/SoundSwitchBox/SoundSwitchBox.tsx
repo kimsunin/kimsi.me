@@ -1,14 +1,22 @@
 "use client";
-import React from "react";
-import {SoundOffIc, SoundOnIc} from "../../../../public/svg";
+import {useSound} from "@/hook/useSound";
+import {SoundOnSound} from "sound/index";
+import {SoundOnIc, SoundOffIc} from "../../../../public/svg";
 
 
 function SoundSwitchBox() {
-    const [sound,  setSound] = React.useState(false);
+    const {sound, setSound} = useSound();
 
-    return <button className={"box"} onClick={() => {
-        setSound(!sound)
-    }}>
+    const soundObj = new Audio(SoundOnSound);
+
+    const switchSound = () =>{
+        if(!sound) {
+            soundObj.play();
+        }
+        setSound(!sound);
+    }
+
+    return <button className={"box"} onClick={switchSound}>
         <div>
             <div className={"icon-box"}>
                 {sound ? <SoundOnIc/> : <SoundOffIc/>}

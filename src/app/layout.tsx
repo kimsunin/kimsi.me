@@ -5,6 +5,7 @@ import "./globals.css";
 import MainLayout from "@/layout/MainLayout/MainLayout";
 import DashboardLayout from "@/layout/DashboardLayout/DashboardLayout";
 import ThemeProvider from "@/layout/ThemeProvider/ThemeProvider";
+import SoundProvider from "@/layout/SoundProvider/SoundProvider";
 
 
 const pretendard = localFont({
@@ -26,17 +27,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-      <html lang="en" className={`${pretendard.variable}`}>
-      <body className={pretendard.className}>
-      <ThemeProvider>
-          <MainLayout>
-            <DashboardLayout>
-              {children}
-            </DashboardLayout>
-          </MainLayout>
-      </ThemeProvider>
-      </body>
-      </html>
-  );
+    return (
+        <html lang="en" className={`${pretendard.variable}`}>
+        <body className={pretendard.className}>
+        <ThemeProvider>
+            <SoundProvider>
+                <MainLayout>
+                    <DashboardLayout>
+                        {children}
+                    </DashboardLayout>
+                </MainLayout>
+            </SoundProvider>
+        </ThemeProvider>
+        </body>
+        </html>
+    );
 }
