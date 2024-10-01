@@ -1,68 +1,56 @@
-.home-page{
-}
-
-
-/*github-layout*/
-.github-layout {
-    @apply w-full h-[160px] mb-[40px]
-}
-
-/*util-layout*/
-.util-layout {
-    @apply w-full h-[160px] mb-[40px] grid grid-cols-2 gap-[40px]
-}
-
-/*jobs-layout*/
-.jobs-layout {
-    @apply w-full h-[360px] mb-[40px] flex
-}
-.jobs-layout > div:nth-child(1) {
-    @apply w-[160px] mr-[40px]
-}
-.jobs-layout > div:nth-child(1) > a {
-    @apply mb-[40px]
-}
-.jobs-layout > div:nth-child(2) > div > * {
-    @apply w-full h-[360px] rounded-lg
+@screen tablet-pc{
+    h4 {
+        @apply col-span-3
+    }
+    .home-page {
+        @apply h-full grid grid-cols-3 gap-[40px]
+    }
+    .home-page > li {
+        @apply h-[160px]
+    }
+    .github {
+        @apply col-span-full row-span-1
+    }
+    .theme {
+        @apply col-span-1
+    }
+    .blog {
+        @apply col-span-2
+    }
+    .sound {
+        @apply col-span-1
+    }
+    .retriver-img {
+        @apply col-span-2 row-span-2 rounded-lg
+    }
+    .retriver-img *{
+        @apply rounded-lg
+    }
+    .gmail {
+        @apply col-span-1
+    }
 }
 
 @screen mobile {
-    .jobs-layout {
-        @apply w-full h-[360px] mb-[40px] grid grid-cols-2 gap-[40px]
+    h4 {
+        @apply col-span-2
     }
-    .jobs-layout > div:nth-child(1) {
-        @apply w-full
+    .home-page {
+        @apply h-full grid grid-cols-2 gap-[40px]
     }
-}
-
-/*craft-layout*/
-.craft-layout {
-    @apply mb-[40px]
-}
-.craft-layout > div {
-    @apply w-full grid gap-[40px]
-}
-@screen pc {
-    .craft-layout > div {
-        @apply grid-cols-3
+    .home-page > li {
+        @apply h-[160px]
     }
-}
-@screen tablet {
-    .craft-layout > div {
-        @apply grid-cols-3
+    .github {
+        @apply col-span-full
     }
-}
-@screen mobile {
-    .craft-layout > div {
-        @apply grid-cols-2
+    .retriver-img {
+        @apply row-span-2 rounded-lg
+    }
+    .retriver-img * {
+        @apply w-full h-full rounded-lg
     }
 }
 
-/*not-found-page*/
-.not-found-page > div {
-   @apply flex justify-center
-}
-.not-found-page > div > a {
-    @apply px-[10px] py-[4px] border rounded-md
-}
+
 

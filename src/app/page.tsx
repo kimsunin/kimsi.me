@@ -24,39 +24,37 @@ export default function Home() {
     return (
         <main>
             <section className={visible ? "is-visible" : "is-invisible"}>
-                <article className={"github-layout"}>
-                    <GithubLinkBox/>
-                </article>
-                <article className={"util-layout"}>
-                    <ThemeSwitchBox/>
-                    <SoundSwitchBox/>
-                </article>
-                <article className={"jobs-layout"}>
-                    <div>
+                <ul className={"home-page"}>
+                    <li className={"github"}>
+                        <GithubLinkBox/>
+                    </li>
+                    <li className={"theme"}>
+                        <ThemeSwitchBox/>
+                    </li>
+                    <li className={"blog"}>
                         <BlogLinkBox/>
-                        <GmailLinkBox/>
-                    </div>
-                    <div>
+                    </li>
+                    <li className={"sound"}>
+                        <SoundSwitchBox/>
+                    </li>
+                    <li className={"retriver-img"}>
                         <CustomImage src={"/gif/retriver-sleep.gif"}/>
-                    </div>
-                </article>
-                <article className={"craft-layout"}>
-                    <h4>
-                        CRAFTS 🛠️
-                    </h4>
-                    <div>
+                    </li>
+                    <li className={"gmail"}>
+                        <GmailLinkBox/>
+                    </li>
+                    <h4>CRAFTS 🛠️</h4>
+                    <li className={"craft-item"}>
                         <NhLinkBox/>
+                    </li>
+                    <li className={"craft-item"}>
                         <BookShareLinkBox/>
+                    </li>
+                    <li className={"craft-item"}>
                         <BmwLinkBox/>
-                    </div>
-                </article>
-                <article className={"stack-layout"}>
-                    <h4>
-                        STACKS 💻
-                    </h4>
-                    <div>
-                    </div>
-                </article>
+                    </li>
+                    <h4>STACKS 💻</h4>
+                </ul>
             </section>
         </main>
     );

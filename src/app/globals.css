@@ -58,3 +58,11 @@ hr {
 .text-box > p:nth-child(2) {
   @apply text-[14px] text-black/50 dark:text-white/30
 }
+
+/*not-found-page*/
+.not-found-page > div {
+  @apply flex justify-center
+}
+.not-found-page > div > a {
+  @apply px-[10px] py-[4px] border rounded-md
+}

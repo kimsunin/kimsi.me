@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "./page.css"
 import {NotFoundImgIc} from "../../public/svg";
 
 function NotFound() {
