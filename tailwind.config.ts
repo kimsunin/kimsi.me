@@ -18,6 +18,7 @@ const config: Config = {
         mobile: {max: "767px"},
         tablet: {min: "768px", max: "1023px"},
         pc: {min: "1024px"},
+        "tablet-pc ": {min: "768px"}
       },
       colors: {
         background: "var(--background)",

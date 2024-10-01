@@ -14,13 +14,25 @@
 
 /*jobs-layout*/
 .jobs-layout {
-    @apply w-full h-[360px] mb-[40px] grid grid-cols-2 gap-[40px]
+    @apply w-full h-[360px] mb-[40px] flex
+}
+.jobs-layout > div:nth-child(1) {
+    @apply w-[160px] mr-[40px]
 }
 .jobs-layout > div:nth-child(1) > a {
     @apply mb-[40px]
 }
 .jobs-layout > div:nth-child(2) > div > * {
     @apply w-full h-[360px] rounded-lg
+}
+
+@screen mobile {
+    .jobs-layout {
+        @apply w-full h-[360px] mb-[40px] grid grid-cols-2 gap-[40px]
+    }
+    .jobs-layout > div:nth-child(1) {
+        @apply w-full
+    }
 }
 
 /*craft-layout*/
@@ -37,7 +49,7 @@
 }
 @screen tablet {
     .craft-layout > div {
-        @apply grid-cols-2
+        @apply grid-cols-3
     }
 }
 @screen mobile {

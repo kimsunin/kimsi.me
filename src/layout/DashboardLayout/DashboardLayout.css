@@ -1,28 +1,20 @@
-.dashboard-layout > div {
-  @apply transition-w duration-500
-}
-
 @screen pc {
   .dashboard-layout {
     @apply flex
   }
   .dashboard-layout > div:nth-child(1) {
-    @apply w-[45%] mr-[5%]
+    @apply mr-auto
   }
   .dashboard-layout > div:nth-child(2) {
-    @apply w-[60%]
+    @apply w-[560px]
   }
 }
 
 @screen tablet {
   .dashboard-layout {
-    @apply flex
-  }
-  .dashboard-layout > div:nth-child(1) {
-    @apply w-[30%] mr-[5%]
   }
   .dashboard-layout > div:nth-child(2) {
-    @apply w-[65%]
+    @apply w-[560px] mx-auto
   }
 }
 
