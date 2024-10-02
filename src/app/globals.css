@@ -65,6 +65,9 @@ hr {
 .not-found-page > div {
   @apply flex justify-center;
 }
+.not-found-page > h1 {
+  @apply text-center
+}
 .not-found-page > div > a {
   @apply px-[10px] py-[4px] border rounded-md;
 }

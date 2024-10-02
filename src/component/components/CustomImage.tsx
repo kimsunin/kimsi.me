@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import "./CustomImage.css"
-import {ErrorImgIc} from "../../../public/svg/index";
+import "../styles/CustomImage.css"
+import {ErrorImgIc} from "svg/index";
 
 
 type PropsType = {

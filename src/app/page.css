@@ -20,10 +20,10 @@
   .sound {
     @apply col-span-1;
   }
-  .retriver-img {
+  .img {
     @apply col-span-2 row-span-2 rounded-lg;
   }
-  .retriver-img * {
+  .img * {
     @apply rounded-lg;
   }
   .gmail {
@@ -31,7 +31,7 @@
   }
 }
 
-@screen mobile {
+@screen mobile{
   h4 {
     @apply col-span-2;
   }
@@ -44,10 +44,10 @@
   .github {
     @apply col-span-full;
   }
-  .retriver-img {
+  .img {
     @apply row-span-2 rounded-lg;
   }
-  .retriver-img * {
-    @apply w-full h-full rounded-lg;
+  .img * {
+    @apply w-full h-[360px] rounded-lg;
   }
 }

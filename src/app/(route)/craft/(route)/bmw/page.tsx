@@ -1,6 +1,6 @@
 "use client"
 import {useEffect, useState} from "react";
-import {BmwCanvas} from "@/component";
+import {BmwCanvas} from "@/component/index";
 
 function Page() {
     const [visible, setVisible] = useState(false);

@@ -1,13 +1,13 @@
 import Link from "next/link";
-import "./Kimsunin.css";
-import { KimsuninIc } from "../../../public/svg";
+import "../styles/Kimsunin.css";
+import { KimsuninIc } from "svg/index";
 
 function Kimsunin() {
   return (
     <div className="kimsunin">
       <div>
         <div>
-          <Link href="/">
+          <Link href="/public">
             <KimsuninIc />
           </Link>
         </div>
