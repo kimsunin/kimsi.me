@@ -7,7 +7,7 @@ function Kimsunin() {
     <div className="kimsunin">
       <div>
         <div>
-          <Link href="/public">
+          <Link href="/">
             <KimsuninIc />
           </Link>
         </div>
