@@ -33,4 +33,7 @@
 @screen mobile {
   .dashboard-layout {
   }
+  .dashboard-layout > div:nth-child(2) {
+    @apply max-w-[520px] mx-auto
+  }
 }
