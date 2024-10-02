@@ -1,25 +1,24 @@
-'use client';
-import {useState, useEffect} from "react"
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { type ThemeProviderProps } from 'next-themes/dist/types';
+"use client";
+import { useState, useEffect } from "react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { type ThemeProviderProps } from "next-themes/dist/types";
 
- 
 function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  const [isMount, setMount] = useState(false)
+  const [isMount, setMount] = useState(false);
 
   useEffect(() => {
-    setMount(true)
-  }, [])
+    setMount(true);
+  }, []);
 
   if (!isMount) {
-    return null
+    return null;
   }
 
   return (
-    <NextThemesProvider attribute='class' enableSystem={true} {...props}>
+    <NextThemesProvider attribute="class" enableSystem={true} {...props}>
       {children}
     </NextThemesProvider>
   );
 }
 
-export default ThemeProvider
+export default ThemeProvider;

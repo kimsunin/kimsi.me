@@ -1,13 +1,12 @@
 import React from "react";
-import "./MainLayout.css"
+import "./MainLayout.css";
 
-
-function MainLayout({children}: Readonly<{
+function MainLayout({
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="main-layout">
-      {children}
-  </div>;
+  return <div className="main-layout">{children}</div>;
 }
 
-export default MainLayout
+export default MainLayout;

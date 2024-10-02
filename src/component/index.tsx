@@ -11,15 +11,15 @@ import CustomImage from "@/component/CustomImage/CustomImage";
 import BmwLinkBox from "@/component/Box/BmwLinkBox";
 
 export {
-    Kimsunin,
-    GithubLinkBox,
-    ThemeSwitchBox,
-    SoundSwitchBox,
-    BlogLinkBox,
-    GmailLinkBox,
-    NhLinkBox,
-    BookShareLinkBox,
-    BmwCanvas,
-    CustomImage,
-    BmwLinkBox,
+  Kimsunin,
+  GithubLinkBox,
+  ThemeSwitchBox,
+  SoundSwitchBox,
+  BlogLinkBox,
+  GmailLinkBox,
+  NhLinkBox,
+  BookShareLinkBox,
+  BmwCanvas,
+  CustomImage,
+  BmwLinkBox,
 };

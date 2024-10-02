@@ -7,19 +7,18 @@ import DashboardLayout from "@/layout/DashboardLayout/DashboardLayout";
 import ThemeProvider from "@/layout/ThemeProvider/ThemeProvider";
 import SoundProvider from "@/layout/SoundProvider/SoundProvider";
 
-
 const pretendard = localFont({
-    src: "../../public/font/PretendardVariable.woff2",
-    display: "swap",
-    variable: "--font-pretendard",
+  src: "../../public/font/PretendardVariable.woff2",
+  display: "swap",
+  variable: "--font-pretendard",
 });
 
 export const metadata: Metadata = {
-    title: "kimsi.me",
-    description: "develop space of kimsunin",
-    icons: {
-        icon: "/svg/kimsunin.svg",
-    },
+  title: "kimsi.me",
+  description: "develop space of kimsunin",
+  icons: {
+    icon: "/svg/kimsunin.svg",
+  },
 };
 
 export default function RootLayout({
@@ -27,19 +26,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en" className={`${pretendard.variable}`}>
-        <body className={pretendard.className}>
+  return (
+    <html lang="en" className={`${pretendard.variable}`}>
+      <body className={pretendard.className}>
         <ThemeProvider>
-            <SoundProvider>
-                <MainLayout>
-                    <DashboardLayout>
-                        {children}
-                    </DashboardLayout>
-                </MainLayout>
-            </SoundProvider>
+          <SoundProvider>
+            <MainLayout>
+              <DashboardLayout>{children}</DashboardLayout>
+            </MainLayout>
+          </SoundProvider>
         </ThemeProvider>
-        </body>
-        </html>
-    );
+      </body>
+    </html>
+  );
 }

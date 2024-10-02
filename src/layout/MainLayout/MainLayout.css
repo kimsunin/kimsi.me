@@ -1,25 +1,21 @@
 .main-layout {
-  @apply my-[100px]
+  @apply my-[100px];
 }
 
 @screen pc {
   .main-layout {
-    @apply w-[80%] mx-auto
+    @apply w-[80%] mx-auto;
   }
 }
 
-
 @screen tablet {
   .main-layout {
-    @apply w-[85%] mx-auto
+    @apply w-[85%] mx-auto;
   }
 }
 
 @screen mobile {
   .main-layout {
-    @apply w-[90%] mx-auto
+    @apply w-[90%] mx-auto;
   }
 }
-
-
-

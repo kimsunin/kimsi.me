@@ -10,31 +10,33 @@ body * {
 }
 
 /*a, button*/
-a, button {
+a,
+button {
   @apply block duration-300;
   transition-property: background-color, transform;
 }
-a:hover, button:hover {
+a:hover,
+button:hover {
   @apply scale-105 duration-300 bg-black/5 dark:bg-white/10;
   transition-property: background-color, transform;
 }
 
 /*h1 ~ h4*/
 h1 {
-  @apply text-[24px]
+  @apply text-[24px];
 }
 h2 {
-  @apply text-[22px]
+  @apply text-[22px];
 }
 h3 {
-  @apply text-[20px]
+  @apply text-[20px];
 }
 h4 {
-  @apply text-[18px]
+  @apply text-[18px];
 }
 
 hr {
-  @apply my-[20px]
+  @apply my-[20px];
 }
 
 /*custom visible, invisible*/
@@ -47,22 +49,22 @@ hr {
 
 /*박스 css*/
 .box {
-  @apply w-full h-[160px] p-[20px] flex justify-start border rounded-lg
+  @apply w-full h-[160px] p-[20px] flex justify-start border rounded-lg;
 }
 .icon-box {
-  @apply w-[40px] h-[40px] mb-[10px] flex items-center justify-center border rounded-md
+  @apply w-[40px] h-[40px] mb-[10px] flex items-center justify-center border rounded-md;
 }
 .text-box > p {
-  @apply text-start
+  @apply text-start;
 }
 .text-box > p:nth-child(2) {
-  @apply text-[14px] text-black/50 dark:text-white/30
+  @apply text-[14px] text-black/50 dark:text-white/30;
 }
 
 /*not-found-page*/
 .not-found-page > div {
-  @apply flex justify-center
+  @apply flex justify-center;
 }
 .not-found-page > div > a {
-  @apply px-[10px] py-[4px] border rounded-md
+  @apply px-[10px] py-[4px] border rounded-md;
 }

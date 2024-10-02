@@ -1,12 +1,12 @@
 @screen pc {
   .dashboard-layout {
-    @apply flex
+    @apply flex;
   }
   .dashboard-layout > div:nth-child(1) {
-    @apply mr-auto
+    @apply mx-auto;
   }
   .dashboard-layout > div:nth-child(2) {
-    @apply w-[560px]
+    @apply w-[560px];
   }
 }
 
@@ -14,10 +14,9 @@
   .dashboard-layout {
   }
   .dashboard-layout > div:nth-child(2) {
-    @apply w-[560px] mx-auto
+    @apply w-[560px] mx-auto;
   }
 }
-
 
 @screen mobile {
   .dashboard-layout {

@@ -1,56 +1,53 @@
-@screen tablet-pc{
-    h4 {
-        @apply col-span-3
-    }
-    .home-page {
-        @apply h-full grid grid-cols-3 gap-[40px]
-    }
-    .home-page > li {
-        @apply h-[160px]
-    }
-    .github {
-        @apply col-span-full row-span-1
-    }
-    .theme {
-        @apply col-span-1
-    }
-    .blog {
-        @apply col-span-2
-    }
-    .sound {
-        @apply col-span-1
-    }
-    .retriver-img {
-        @apply col-span-2 row-span-2 rounded-lg
-    }
-    .retriver-img *{
-        @apply rounded-lg
-    }
-    .gmail {
-        @apply col-span-1
-    }
+@screen tablet-pc {
+  h4 {
+    @apply col-span-3;
+  }
+  .home-page {
+    @apply h-full grid grid-cols-3 gap-[40px];
+  }
+  .home-page > li {
+    @apply h-[160px];
+  }
+  .github {
+    @apply col-span-full row-span-1;
+  }
+  .theme {
+    @apply col-span-1;
+  }
+  .blog {
+    @apply col-span-2;
+  }
+  .sound {
+    @apply col-span-1;
+  }
+  .retriver-img {
+    @apply col-span-2 row-span-2 rounded-lg;
+  }
+  .retriver-img * {
+    @apply rounded-lg;
+  }
+  .gmail {
+    @apply col-span-1;
+  }
 }
 
 @screen mobile {
-    h4 {
-        @apply col-span-2
-    }
-    .home-page {
-        @apply h-full grid grid-cols-2 gap-[40px]
-    }
-    .home-page > li {
-        @apply h-[160px]
-    }
-    .github {
-        @apply col-span-full
-    }
-    .retriver-img {
-        @apply row-span-2 rounded-lg
-    }
-    .retriver-img * {
-        @apply w-full h-full rounded-lg
-    }
+  h4 {
+    @apply col-span-2;
+  }
+  .home-page {
+    @apply h-full grid grid-cols-2 gap-[40px];
+  }
+  .home-page > li {
+    @apply h-[160px];
+  }
+  .github {
+    @apply col-span-full;
+  }
+  .retriver-img {
+    @apply row-span-2 rounded-lg;
+  }
+  .retriver-img * {
+    @apply w-full h-full rounded-lg;
+  }
 }
-
-
-
