@@ -35,10 +35,6 @@ h4 {
   @apply text-[18px];
 }
 
-hr {
-  @apply my-[20px];
-}
-
 /*custom visible, invisible*/
 .is-visible {
   @apply opacity-100 duration-1000;

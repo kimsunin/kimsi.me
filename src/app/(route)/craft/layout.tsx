@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "kimsi.me | craft",
-  description: "직접 만들고 보여주는 공간",
+  description: "손으로 직접 만듦",
 };
 
 export default function CraftLayout({

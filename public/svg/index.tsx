@@ -11,6 +11,7 @@ import MailIc from "./mail.svg"
 import NongHaengIc from "./nonghaeng.svg"
 import BookIc from "./book.svg"
 import BmwIc from "./bmw.svg"
+import CategoryIc from "./category.svg"
 
 
 export {
@@ -26,5 +27,6 @@ export {
     MailIc,
     NongHaengIc,
     BookIc,
-    BmwIc
+    BmwIc,
+    CategoryIc,
 };

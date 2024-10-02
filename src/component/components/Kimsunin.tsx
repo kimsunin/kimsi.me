@@ -4,17 +4,17 @@ import { KimsuninIc } from "svg/index";
 
 function Kimsunin() {
   return (
-    <div className="kimsunin">
-      <div>
+      <div className="kimsunin">
         <div>
-          <Link href="/">
-            <KimsuninIc />
-          </Link>
+          <div>
+            <Link href="/">
+              <KimsuninIc/>
+            </Link>
+          </div>
+          <h1>KIMSUNIN</h1>
+          <p>개발이 즐거운 개발자 김선인입니다</p>
         </div>
-        <h1>KIMSUNIN</h1>
-        <p>김선인의 개발공간</p>
       </div>
-    </div>
   );
 }
 

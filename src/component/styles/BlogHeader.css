@@ -1,0 +1,41 @@
+.blog-header > div {
+    @apply mb-[20px] flex items-center justify-between
+}
+.blog-header > div > div {
+    @apply flex items-center
+}
+.blog-header > div > div > a {
+    @apply text-[24px]
+}
+.blog-header > div > div > a:hover {
+    @apply bg-transparent transform-none
+}
+.blog-header > div > button {
+    @apply w-[40px] h-[40px] flex justify-center items-center rounded-md border
+}
+
+.blog-header > ul {
+    @apply overflow-hidden
+}
+.blog-header > ul > li {
+    @apply py-[2px] flex justify-end
+}
+.blog-header >ul > li > a {
+    @apply text-black/50 dark:text-white/30
+}
+.blog-header >ul > li > a:hover {
+    @apply text-black/80 dark:text-white/60
+}
+.blog-header >ul > li > a:hover {
+    @apply bg-transparent transform-none
+}
+.category-on {
+    @apply h-[90px] duration-300
+}
+.category-off {
+    @apply h-0 duration-300
+}
+
+.blog-header > hr {
+    @apply mb-[20px]
+}
