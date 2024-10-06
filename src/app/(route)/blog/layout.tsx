@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import BlogHeader from "@/component/components/BlogHeader";
+import BlogHeader from "@/component/BlogHeader/BlogHeader";
 
 export const metadata: Metadata = {
   title: "kimsi.me | blog",

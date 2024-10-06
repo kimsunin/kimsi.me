@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import "../styles/CustomImage.css"
+import "./CustomImage.css"
 import {ErrorImgIc} from "svg/index";
 
 

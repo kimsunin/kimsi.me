@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "../styles/Kimsunin.css";
+import "./Kimsunin.css";
 import { KimsuninIc } from "svg/index";
 
 function Kimsunin() {
@@ -7,7 +7,7 @@ function Kimsunin() {
       <div className="kimsunin">
         <div>
           <div>
-            <Link href="/">
+            <Link href="/public">
               <KimsuninIc/>
             </Link>
           </div>

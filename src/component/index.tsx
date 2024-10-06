@@ -1,10 +1,10 @@
-import GithubLinkBox from "./components/GithubLinkBox";
-import ThemeSwitchBox from "./components/ThemeSwitchBox";
-import SoundSwitchBox from "./components/SoundSwitchBox";
-import LinkBox from "./components/LinkBox";
-import Kimsunin from "./components/Kimsunin";
-import BmwCanvas from "./components/BmwCanvas";
-import CustomImage from "./components/CustomImage";
+import GithubLinkBox from "./GithubLinkBox/GithubLinkBox";
+import ThemeSwitchBox from "./ThemeSwitchBox/ThemeSwitchBox";
+import SoundSwitchBox from "./SoundSwitchBox/SoundSwitchBox";
+import LinkBox from "./LinkBox/LinkBox";
+import Kimsunin from "./Kimsunin/Kimsunin";
+import BmwCanvas from "./BmwCanvas/BmwCanvas";
+import CustomImage from "./CustomImage/CustomImage";
 
 export {
   Kimsunin,

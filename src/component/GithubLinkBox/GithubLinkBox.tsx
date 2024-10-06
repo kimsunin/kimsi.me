@@ -4,7 +4,7 @@ import Link from "next/link";
 import {useTheme} from "next-themes";
 import dayjs from 'dayjs'
 import Calendar from 'react-github-contribution-calendar'
-import "../styles/GithubLinkBox.css"
+import "./GithubLinkBox.css"
 import {GithubIc} from "svg/index";
 
 

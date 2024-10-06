@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import "../styles/BlogHeader.css";
+import "./BlogHeader.css";
 import { blogCategoryModel } from "@/model/blogCategoryModel";
 import { CategoryIc } from "svg/index";
 
