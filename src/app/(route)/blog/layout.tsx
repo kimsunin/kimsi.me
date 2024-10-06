@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import BlogHeader from "@/component/BlogHeader/BlogHeader";
+import { BlogHeader } from "@/component/index";
 
 export const metadata: Metadata = {
   title: "kimsi.me | blog",
@@ -12,9 +12,9 @@ export default function CraftLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <main>
-        <BlogHeader/>
-        {children}
-      </main>
+    <main>
+      <BlogHeader />
+      {children}
+    </main>
   );
 }

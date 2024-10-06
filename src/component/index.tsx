@@ -5,13 +5,15 @@ import LinkBox from "./LinkBox/LinkBox";
 import Kimsunin from "./Kimsunin/Kimsunin";
 import BmwCanvas from "./BmwCanvas/BmwCanvas";
 import CustomImage from "./CustomImage/CustomImage";
+import BlogHeader from "@/component/BlogHeader/BlogHeader";
 
 export {
-  Kimsunin,
-  GithubLinkBox,
-  ThemeSwitchBox,
-  SoundSwitchBox,
-  BmwCanvas,
-  CustomImage,
-  LinkBox,
+    Kimsunin,
+    GithubLinkBox,
+    ThemeSwitchBox,
+    SoundSwitchBox,
+    BmwCanvas,
+    CustomImage,
+    LinkBox,
+    BlogHeader
 };
