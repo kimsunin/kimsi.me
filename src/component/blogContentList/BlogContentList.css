@@ -1,0 +1,99 @@
+@screen pc-large {
+  .blog-list {
+    @apply grid grid-cols-2 grid-rows-[360px] gap-[40px];
+  }
+  .blog-list > li > a {
+    @apply w-full h-full border p-0 block rounded-lg;
+  }
+
+  /* 이미지 영역 */
+  .blog-list > li > a > div:nth-child(1) {
+    @apply w-full h-[220px];
+  }
+  .blog-list > li > a > div:nth-child(1) > img {
+    @apply rounded-t-md;
+  }
+
+  /* 설명 영역 */
+  .blog-list > li > a > div:nth-child(2) {
+    @apply h-[140px] p-[6px] border-t relative;
+  }
+  .blog-list > li > a > div:nth-child(2) > span {
+    @apply absolute left-[6px] bottom-[6px] text-[14px];
+  }
+}
+
+@screen pc {
+  .blog-list {
+    @apply grid grid-cols-2 grid-rows-[300px] gap-[40px];
+  }
+  .blog-list > li > a {
+    @apply w-full h-full border p-0 block rounded-lg;
+  }
+
+  /* 이미지 영역 */
+  .blog-list > li > a > div:nth-child(1) {
+    @apply w-full h-[180px];
+  }
+  .blog-list > li > a > div:nth-child(1) > img {
+    @apply rounded-t-md;
+  }
+
+  /* 설명 영역 */
+  .blog-list > li > a > div:nth-child(2) {
+    @apply h-[120px] p-[6px] border-t relative;
+  }
+  .blog-list > li > a > div:nth-child(2) > span {
+    @apply absolute left-[6px] bottom-[6px] text-[14px];
+  }
+}
+
+@screen tablet {
+  .blog-list {
+    @apply grid grid-cols-2 grid-rows-[300px] gap-[20px];
+  }
+  .blog-list > li > a {
+    @apply w-full h-full border p-0 block rounded-lg;
+  }
+
+  /* 이미지 영역 */
+  .blog-list > li > a > div:nth-child(1) {
+    @apply w-full h-[180px];
+  }
+  .blog-list > li > a > div:nth-child(1) > img {
+    @apply rounded-t-md;
+  }
+
+  /* 설명 영역 */
+  .blog-list > li > a > div:nth-child(2) {
+    @apply h-[120px] p-[6px] border-t relative;
+  }
+  .blog-list > li > a > div:nth-child(2) > span {
+    @apply absolute left-[6px] bottom-[6px] text-[14px];
+  }
+}
+
+@screen mobile {
+  .blog-list {
+    @apply grid grid-cols-1 grid-rows-[360px] gap-[20px];
+  }
+  .blog-list > li > a {
+    @apply w-full h-full border p-0 block rounded-lg;
+  }
+
+  /* 이미지 영역 */
+  .blog-list > li > a > div:nth-child(1) {
+    @apply w-full h-[220px];
+  }
+  .blog-list > li > a > div:nth-child(1) > img {
+    @apply rounded-t-md;
+  }
+
+  /* 설명 영역 */
+  .blog-list > li > a > div:nth-child(2) {
+    @apply h-[140px] p-[6px] border-t relative;
+  }
+  .blog-list > li > a > div:nth-child(2) > span {
+    @apply absolute left-[6px] bottom-[6px] text-[14px];
+  }
+}

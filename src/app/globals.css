@@ -62,8 +62,16 @@ h4 {
   @apply flex justify-center;
 }
 .not-found-page > h1 {
-  @apply text-center
+  @apply text-center;
 }
 .not-found-page > div > a {
   @apply px-[10px] py-[4px] border rounded-md;
+}
+
+/* list-page */
+.list-article {
+  @apply my-[40px];
+}
+.list-article > h3 {
+  @apply mb-[20px];
 }
