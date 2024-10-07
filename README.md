@@ -1,3 +1,3 @@
 # kimsi.me
 
-next js portfolio
+김선인의 잡동사니
