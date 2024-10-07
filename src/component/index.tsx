@@ -8,12 +8,12 @@ import CustomImage from "./CustomImage/CustomImage";
 import BlogHeader from "@/component/BlogHeader/BlogHeader";
 
 export {
-    Kimsunin,
-    GithubLinkBox,
-    ThemeSwitchBox,
-    SoundSwitchBox,
-    BmwCanvas,
-    CustomImage,
-    LinkBox,
-    BlogHeader
+  Kimsunin,
+  GithubLinkBox,
+  ThemeSwitchBox,
+  SoundSwitchBox,
+  BmwCanvas,
+  CustomImage,
+  LinkBox,
+  BlogHeader,
 };

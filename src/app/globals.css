@@ -72,6 +72,12 @@ h4 {
 .list-article {
   @apply my-[40px];
 }
-.list-article > h3 {
+.list-article > h4 {
   @apply mb-[20px];
+}
+.list-article > div {
+  @apply mb-[20px] flex justify-between items-center;
+}
+.list-article > div > a {
+  @apply bg-transparent transform-none text-black/60 dark:text-white/40;
 }
