@@ -38,7 +38,6 @@ function BlogHeader() {
       <ul className={isClick ? "category-on" : "category-off"}>
         {categoryList}
       </ul>
-      <hr />
     </div>
   );
 }
