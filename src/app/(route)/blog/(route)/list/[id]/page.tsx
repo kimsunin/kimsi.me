@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BlogContentList from "@/component/BlogContentList/BlogContentList";
+import { BlogContentList } from "@/component";
 import { BlogContentListType, BlogType } from "@/type/BlogType";
 
 function Page({ params }: { params: { id: string } }) {

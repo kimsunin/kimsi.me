@@ -1,6 +1,5 @@
 "use client";
-import BlogContentTitle from "@/component/BlogContentTitle/BlogContentTitle";
-import MarkDownView from "@/component/MarkDownView/MarkDownView";
+import { BlogContentTitle, MarkDownView } from "@/component";
 import { BlogContenDetailType, BlogType } from "@/type/BlogType";
 import React from "react";
 

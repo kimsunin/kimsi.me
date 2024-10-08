@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BlogContentList from "@/component/BlogContentList/BlogContentList";
+import { BlogContentList } from "@/component";
 import { BlogContentGroupListType, BlogType } from "@/type/BlogType";
 import Link from "next/link";
 
