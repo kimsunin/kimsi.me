@@ -7,7 +7,7 @@ export async function GET() {
 
   const getDevData = async () => {
     const { data } = await supabase
-      .from("deve")
+      .from("dev")
       .select("id,title,date,img_url")
       .range(0, 3)
       .order("date", { ascending: false });

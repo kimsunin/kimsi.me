@@ -8,7 +8,7 @@ type PropsType = { type: string; data: BlogContentListType | undefined };
 function BlogContentList({ type, data }: PropsType) {
   const blogContentList = data?.map((item, index) => (
     <li key={index}>
-      <Link href={`/blog/${type}/${item.id}`}>
+      <Link href={`/blog/detail/${type}/${item.id}`}>
         <CustomImage src={item.img_url} />
         <div>
           <h4>{item.title}</h4>

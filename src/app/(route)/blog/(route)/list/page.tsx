@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BlogContentList from "@/component/blogContentList/BlogContentList";
+import BlogContentList from "@/component/BlogContentList/BlogContentList";
 import { BlogContentGroupListType, BlogType } from "@/type/BlogType";
 import Link from "next/link";
 
@@ -10,7 +10,6 @@ function Page() {
 
   React.useEffect(() => {
     getData().then((res: BlogType) => {
-      console.log(res);
       if (res.status == 200) {
         setData(res.data);
         setVisible(true);
@@ -23,7 +22,7 @@ function Page() {
       <article className="list-article">
         <div>
           <h4>develop - 개발에 관한 기록</h4>
-          <Link href="/blog/dev">더보기</Link>
+          <Link href="/blog/list/dev">더보기</Link>
         </div>
         <div>
           {data?.dev.length ? (
@@ -36,7 +35,7 @@ function Page() {
       <article className="list-article">
         <div>
           <h4>engineering - 공학에 관한 기록</h4>
-          <Link href="/blog/engin">더보기</Link>
+          <Link href="/blog/list/engin">더보기</Link>
         </div>
         <div>
           {data?.engin.length ? (
@@ -49,7 +48,7 @@ function Page() {
       <article className="list-article">
         <div>
           <h4>note - 제약없이 자유로운 기록</h4>
-          <Link href="/blog/note">더보기</Link>
+          <Link href="/blog/list/note">더보기</Link>
         </div>
         <div>
           {data?.note.length ? (

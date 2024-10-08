@@ -1,0 +1,12 @@
+.blog-title > h1 {
+  @apply mb-[20px] flex justify-center text-center;
+}
+.blog-title > div {
+  @apply flex justify-center items-center opacity-60;
+}
+.blog-title > div > span {
+  @apply ml-[6px] text-[14px];
+}
+.blog-title > hr {
+  @apply my-[20px];
+}

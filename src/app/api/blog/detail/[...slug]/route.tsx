@@ -1,14 +1,16 @@
-import { supabase } from "@/util/supabase";
 import { NextRequest, NextResponse } from "next/server";
+import { supabase } from "@/util/supabase";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: { slug: string[] } }
 ) {
   const { data, error } = await supabase
-    .from(params.id)
-    .select("id,title,date,img_url")
-    .order("date", { ascending: false });
+    .from(params.slug[0])
+    .select("title,content,date")
+    // Filters
+    .eq("id", params.slug[1])
+    .single();
 
   if (data) {
     return NextResponse.json({ data: data, message: "success", status: 200 });
@@ -16,7 +18,7 @@ export async function GET(
     return NextResponse.json({
       error: error,
       message: "글이 존재하지 않습니다",
-      code: 404,
+      status: 404,
     });
   }
 }

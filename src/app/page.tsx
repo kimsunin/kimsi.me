@@ -29,7 +29,7 @@ export default function Home() {
           <li className={"blog"}>
             <LinkBox
               type={"blog"}
-              href={"/blog"}
+              href={"/blog/list"}
               title={"BLOG"}
               subtitle={"link to blog"}
             />
