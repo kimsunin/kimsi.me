@@ -30,7 +30,7 @@ function Page() {
     <section className={visible ? "is-visible" : "is-invisible"}>
       <article className="list-article">
         <div>
-          <h4>develop - 개발에 관한 기록</h4>
+          <h3>develop - 개발에 관한 기록</h3>
           <Link href="/blog/list/dev">더보기</Link>
         </div>
         <div>
@@ -43,7 +43,7 @@ function Page() {
       </article>
       <article className="list-article">
         <div>
-          <h4>engineering - 공학에 관한 기록</h4>
+          <h3>engineering - 공학에 관한 기록</h3>
           <Link href="/blog/list/engin">더보기</Link>
         </div>
         <div>
@@ -56,7 +56,7 @@ function Page() {
       </article>
       <article className="list-article">
         <div>
-          <h4>note - 제약없이 자유로운 기록</h4>
+          <h3>note - 제약없이 자유로운 기록</h3>
           <Link href="/blog/list/note">더보기</Link>
         </div>
         <div>

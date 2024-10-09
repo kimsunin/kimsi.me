@@ -18,7 +18,7 @@
   @apply w-[160px] h-[160px];
 }
 .kimsunin > div > h1 {
-  @apply text-center mt-[40px];
+  @apply text-center mt-[40px] text-[36px] font-[500];
 }
 .kimsunin > div > p {
   @apply text-center mt-[10px];
@@ -26,12 +26,12 @@
 
 @screen pc-large {
   .kimsunin > div > p:nth-child(4) {
-    @apply mt-[300px] text-black/40 dark:text-white/20;
+    @apply mt-[300px] text-black/40 dark:text-white/40;
   }
 }
 @screen pc {
   .kimsunin > div > p:nth-child(4) {
-    @apply mt-[300px] text-black/40 dark:text-white/20;
+    @apply mt-[300px]  text-black/40 dark:text-white/40;
   }
 }
 @screen tablet {

@@ -11,7 +11,7 @@ function Kimsunin() {
             <KimsuninIc />
           </Link>
         </div>
-        <h1>KIMSUNIN</h1>
+        <h1>Kimsunin</h1>
         <p>개발이 즐거운 개발자 김선인입니다</p>
         <p>@2024 designed by kimsunin</p>
       </div>

@@ -2,7 +2,7 @@
   @apply mb-[20px] flex items-center justify-between;
 }
 .blog-header > div > a {
-  @apply text-[32px];
+  @apply text-[36px] font-[500];
 }
 .blog-header > div > a:hover {
   @apply bg-transparent transform-none;
@@ -12,7 +12,6 @@
 }
 
 /* 카테고리 리스트 */
-
 .blog-header > ul {
   @apply overflow-hidden;
 }

@@ -26,7 +26,7 @@ function BlogHeader() {
   return (
     <div className={"blog-header"}>
       <div>
-        <Link href={"/blog/list"}>BLOG</Link>
+        <Link href={"/blog/list"}>Blog</Link>
         <button
           onClick={() => {
             setIsClick(!isClick);

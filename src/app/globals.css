@@ -72,7 +72,7 @@ h4 {
 .list-article {
   @apply my-[40px];
 }
-.list-article > h4 {
+.list-article > h3 {
   @apply mb-[20px];
 }
 .list-article > div {
