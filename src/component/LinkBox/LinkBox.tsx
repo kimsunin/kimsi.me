@@ -28,7 +28,7 @@ function LinkBox({ type, href, title, subtitle, target }: PropsType) {
         </div>
         <div className={"text-box"}>
           <p>{title}</p>
-          <p>{subtitle}</p>
+          <p className="text-blur">{subtitle}</p>
         </div>
       </div>
     </Link>

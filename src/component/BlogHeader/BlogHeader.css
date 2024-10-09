@@ -19,7 +19,7 @@
   @apply py-[2px] flex justify-end;
 }
 .blog-header > ul > li {
-  @apply text-black/50 dark:text-white/30;
+  @apply text-black/40 dark:text-white/40;
 }
 .blog-header > ul > li > a:hover {
   @apply text-black/80 dark:text-white/60;

@@ -54,7 +54,7 @@ h4 {
   @apply text-start;
 }
 .text-box > p:nth-child(2) {
-  @apply text-[14px] text-black/50 dark:text-white/30;
+  @apply text-[14px] text-black/40 dark:text-white/40;
 }
 
 /*not-found-page*/
@@ -79,7 +79,7 @@ h4 {
   @apply mb-[20px] flex justify-between items-center;
 }
 .list-article > div > a {
-  @apply text-black/60 dark:text-white/40;
+  @apply text-black/40 dark:text-white/40;
 }
 .list-article > div > a:hover {
   @apply bg-transparent transform-none;
