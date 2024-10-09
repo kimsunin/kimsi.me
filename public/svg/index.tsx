@@ -13,6 +13,7 @@ import BookIc from "./book.svg";
 import BmwIc from "./bmw.svg";
 import CategoryIc from "./category.svg";
 import CalendarIc from "./calendar.svg";
+import QuotesIc from "./quotes.svg";
 
 export {
   ErrorImgIc,
@@ -30,4 +31,5 @@ export {
   BmwIc,
   CategoryIc,
   CalendarIc,
+  QuotesIc,
 };

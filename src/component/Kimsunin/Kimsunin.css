@@ -23,3 +23,24 @@
 .kimsunin > div > p {
   @apply text-center mt-[10px];
 }
+
+@screen pc-large {
+  .kimsunin > div > p:nth-child(4) {
+    @apply mt-[300px] text-black/40 dark:text-white/20;
+  }
+}
+@screen pc {
+  .kimsunin > div > p:nth-child(4) {
+    @apply mt-[300px] text-black/40 dark:text-white/20;
+  }
+}
+@screen tablet {
+  .kimsunin > div > p:nth-child(4) {
+    @apply hidden;
+  }
+}
+@screen mobile {
+  .kimsunin > div > p:nth-child(4) {
+    @apply hidden;
+  }
+}

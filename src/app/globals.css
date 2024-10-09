@@ -45,10 +45,10 @@ h4 {
 
 /*박스 css*/
 .box {
-  @apply w-full h-[160px] p-[20px] flex justify-start border rounded-lg;
+  @apply w-full h-[160px] p-[20px] flex justify-start border rounded-2xl;
 }
 .icon-box {
-  @apply w-[40px] h-[40px] mb-[10px] flex items-center justify-center border rounded-md;
+  @apply w-[40px] h-[40px] mb-[10px] flex items-center justify-center border rounded-lg;
 }
 .text-box > p {
   @apply text-start;
@@ -79,5 +79,8 @@ h4 {
   @apply mb-[20px] flex justify-between items-center;
 }
 .list-article > div > a {
-  @apply bg-transparent transform-none text-black/60 dark:text-white/40;
+  @apply text-black/60 dark:text-white/40;
+}
+.list-article > div > a:hover {
+  @apply bg-transparent transform-none;
 }

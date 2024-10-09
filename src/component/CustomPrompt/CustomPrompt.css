@@ -1,0 +1,15 @@
+.custom-prompt {
+  @apply p-[10px] rounded-md relative bg-white/60 dark:bg-white/20;
+}
+.custom-prompt > span {
+  @apply block;
+}
+.custom-prompt > input {
+  @apply mt-[10px] bg-white/60 dark:bg-white/20;
+}
+.custom-prompt > div {
+  @apply mt-[10px] flex justify-between;
+}
+.custom-prompt > div > button {
+  @apply rounded-lg px-[6px];
+}

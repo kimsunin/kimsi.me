@@ -8,6 +8,7 @@ import {
   CustomImage,
 } from "@/component";
 import "./page.css";
+import MemoBox from "@/component/MemoBox/Memobox";
 
 export default function Home() {
   const [visible, setVisible] = React.useState(false);
@@ -47,6 +48,9 @@ export default function Home() {
               title={"GMAIL"}
               subtitle={"suninkim10 @gmail.com"}
             />
+          </li>
+          <li className="memo">
+            <MemoBox />
           </li>
           <h4>CRAFTS 🛠️</h4>
           <li className={"craft-item"}>

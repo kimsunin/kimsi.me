@@ -8,7 +8,7 @@
   @apply bg-transparent transform-none;
 }
 .blog-header > div > button {
-  @apply w-[40px] h-[40px] flex justify-center items-center rounded-md border;
+  @apply w-[40px] h-[40px] flex justify-center items-center rounded-lg border;
 }
 
 /* 카테고리 리스트 */

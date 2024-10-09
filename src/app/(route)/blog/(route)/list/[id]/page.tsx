@@ -1,19 +1,26 @@
 "use client";
 import React from "react";
+import { useDialog } from "@/hook/useDialog";
+import { useRouter } from "next/navigation";
 import { BlogContentList } from "@/component";
 import { BlogContentListType, BlogType } from "@/type/BlogType";
 
 function Page({ params }: { params: { id: string } }) {
+  const { alert } = useDialog();
+  const router = useRouter();
+
   const [data, setData] = React.useState<BlogContentListType>();
   const [visible, setVisible] = React.useState(false);
 
   React.useEffect(() => {
-    getData(params.id).then((res: BlogType) => {
+    getData(params.id).then(async (res: BlogType) => {
       if (res.status == 200) {
         setData(res.data);
         setVisible(true);
       } else {
-        setVisible(true);
+        await alert(res.message).then(() => {
+          router.back();
+        });
       }
     });
   }, []);

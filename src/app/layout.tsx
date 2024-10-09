@@ -6,6 +6,7 @@ import MainLayout from "@/layout/MainLayout/MainLayout";
 import DashboardLayout from "@/layout/DashboardLayout/DashboardLayout";
 import ThemeProvider from "@/layout/ThemeProvider/ThemeProvider";
 import SoundProvider from "@/layout/SoundProvider/SoundProvider";
+import DialogProvider from "@/layout/DialogProvider/DialogProvider";
 
 const pretendard = localFont({
   src: "../../public/font/PretendardVariable.woff2",
@@ -31,9 +32,11 @@ export default function RootLayout({
       <body className={pretendard.className}>
         <ThemeProvider>
           <SoundProvider>
-            <MainLayout>
-              <DashboardLayout>{children}</DashboardLayout>
-            </MainLayout>
+            <DialogProvider>
+              <MainLayout>
+                <DashboardLayout>{children}</DashboardLayout>
+              </MainLayout>
+            </DialogProvider>
           </SoundProvider>
         </ThemeProvider>
       </body>
