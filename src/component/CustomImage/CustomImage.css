@@ -1,8 +1,7 @@
-.custom-image > img{
-  @apply w-full h-full object-cover
+.custom-image > img {
+  @apply w-full h-full object-cover;
 }
 
 .error-image {
-  @apply flex justify-center items-center bg-black/5 dark:bg-white/10
+  @apply flex justify-center items-center bg-black/5 dark:bg-white/10;
 }
-

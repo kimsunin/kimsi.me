@@ -1,5 +1,5 @@
 .custom-alert {
-  @apply p-[20px] rounded-2xl relative bg-white dark:bg-white/20;
+  @apply p-[20px] rounded-2xl relative bg-white/60 dark:bg-white/20;
 }
 .custom-alert > div {
   @apply mt-[20px] flex justify-end;

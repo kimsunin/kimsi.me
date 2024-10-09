@@ -93,7 +93,7 @@
     @apply col-span-1;
   }
   .memo {
-    @apply col-span-full row-span-2 h-full;
+    @apply col-span-full;
   }
 }
 
@@ -114,6 +114,6 @@
     @apply w-full h-full rounded-2xl;
   }
   .memo {
-    @apply col-span-full row-span-2;
+    @apply col-span-full;
   }
 }

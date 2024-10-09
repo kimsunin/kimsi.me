@@ -2,7 +2,7 @@
   @apply mb-[20px] flex items-center justify-between;
 }
 .blog-header > div > a {
-  @apply text-[28px];
+  @apply text-[32px];
 }
 .blog-header > div > a:hover {
   @apply bg-transparent transform-none;
