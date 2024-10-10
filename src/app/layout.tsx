@@ -2,11 +2,13 @@ import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import MainLayout from "@/layout/MainLayout/MainLayout";
-import DashboardLayout from "@/layout/DashboardLayout/DashboardLayout";
-import ThemeProvider from "@/layout/ThemeProvider/ThemeProvider";
-import SoundProvider from "@/layout/SoundProvider/SoundProvider";
-import DialogProvider from "@/layout/DialogProvider/DialogProvider";
+import {
+  ThemeProvider,
+  SoundProvider,
+  DialogProvider,
+  MainLayout,
+  DashboardLayout,
+} from "@/layout";
 
 const pretendard = localFont({
   src: "../../public/font/PretendardVariable.woff2",

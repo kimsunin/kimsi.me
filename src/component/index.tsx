@@ -12,6 +12,8 @@ import MarkDownView from "./MarkDownView/MarkDownView";
 import CustomAlert from "./CustomAlert/CustomAlert";
 import CustomConfirm from "./CustomConfirm/CustomConfirm";
 import CustomPrompt from "./CustomPrompt/CustomPrompt";
+import MemoBox from "./Box/MemoBox/Memobox";
+import MainPage from "./MainPage/MainPage";
 
 export {
   Kimsunin,
@@ -28,4 +30,6 @@ export {
   CustomAlert,
   CustomConfirm,
   CustomPrompt,
+  MemoBox,
+  MainPage,
 };
