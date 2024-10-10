@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CustomImage from "../CustomImage/CustomImage";
+import { CustomImage } from "@/component/index";
 import { BlogContentListType } from "@/type/BlogType";
 import "./BlogContentList.css";
 

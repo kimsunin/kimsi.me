@@ -8,7 +8,7 @@ import {
   CustomImage,
 } from "@/component";
 import "./page.css";
-import MemoBox from "@/component/MemoBox/Memobox";
+import MemoBox from "@/component/Box/MemoBox/Memobox";
 
 export default function Home() {
   const [visible, setVisible] = React.useState(false);

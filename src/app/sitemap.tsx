@@ -5,20 +5,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: "https://kimsi.me",
       lastModified: new Date(),
-      changeFrequency: "yearly",
+      changeFrequency: "daily",
       priority: 1,
     },
     {
       url: "https://kimsi.me/blog",
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.5,
+      changeFrequency: "daily",
+      priority: 0.8,
     },
     {
       url: "https://kimsi.blog",
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.5,
+      changeFrequency: "daily",
+      priority: 0.8,
     },
   ];
 }
