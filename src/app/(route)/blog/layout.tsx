@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { BlogHeader } from "@/component/index";
+import { Header } from "@/component/index";
 
 export const metadata: Metadata = {
   title: "kimsi.me | blog",
@@ -13,7 +13,7 @@ export default function CraftLayout({
 }>) {
   return (
     <main>
-      <BlogHeader />
+      <Header href="/blog/list" title="Blog" />
       {children}
     </main>
   );

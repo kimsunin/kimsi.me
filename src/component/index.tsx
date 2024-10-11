@@ -5,7 +5,7 @@ import LinkBox from "./Box/LinkBox/LinkBox";
 import Kimsunin from "./Kimsunin/Kimsunin";
 import BmwCanvas from "./BmwCanvas/BmwCanvas";
 import CustomImage from "./CustomImage/CustomImage";
-import BlogHeader from "./Blog/BlogHeader/BlogHeader";
+import Header from "./Header/Header";
 import BlogContentList from "./Blog/BlogContentList/BlogContentList";
 import BlogContentTitle from "./Blog/BlogContentTitle/BlogContentTitle";
 import MarkDownView from "./MarkDownView/MarkDownView";
@@ -23,7 +23,7 @@ export {
   BmwCanvas,
   CustomImage,
   LinkBox,
-  BlogHeader,
+  Header,
   BlogContentList,
   BlogContentTitle,
   MarkDownView,

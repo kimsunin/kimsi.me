@@ -12,4 +12,12 @@ const blogCategoryModel = [
   },
 ];
 
-export { blogCategoryModel };
+const craftCategoryModel = [
+  {
+    title: "bmw",
+    subTitle: "canva태그를 이용한 자동차 게임",
+    href: "/craft/bmw",
+  },
+];
+
+export { blogCategoryModel, craftCategoryModel };

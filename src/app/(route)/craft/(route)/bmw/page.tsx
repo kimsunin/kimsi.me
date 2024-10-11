@@ -1,23 +1,22 @@
-"use client"
-import {useEffect, useState} from "react";
-import {BmwCanvas} from "@/component/index";
+"use client";
+import { useEffect, useState } from "react";
+import { BmwCanvas } from "@/component/index";
 
 function Page() {
-    const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-    useEffect(() => {
-        setVisible(true)
-    }, []);
+  useEffect(() => {
+    setVisible(true);
+  }, []);
 
-    return (
-        <section className={visible ? "is-visible" : "is-invisible"}>
-            <article>
-                <h1>BMW</h1>
-                <hr/>
-                <BmwCanvas/>
-            </article>
-        </section>
-    );
+  return (
+    <section className={visible ? "is-visible" : "is-invisible"}>
+      <article>
+        <h1>BMW</h1>
+        <BmwCanvas />
+      </article>
+    </section>
+  );
 }
 
 export default Page;

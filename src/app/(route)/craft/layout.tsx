@@ -1,3 +1,4 @@
+import { Header } from "@/component";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,5 +11,10 @@ export default function CraftLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <main>{children}</main>;
+  return (
+    <main>
+      <Header href="/craft" title="Craft" />
+      {children}
+    </main>
+  );
 }
