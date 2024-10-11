@@ -15,7 +15,7 @@
     @apply col-span-2;
   }
   .sound {
-    @apply col-span-2;
+    @apply col-span-1;
   }
   .img {
     @apply col-span-2 row-span-2 rounded-2xl;
@@ -108,7 +108,7 @@
     @apply col-span-full;
   }
   .img {
-    @apply row-span-2 rounded-2xl;
+    @apply col-span-2 row-span-2  rounded-2xl;
   }
   .img * {
     @apply w-full h-full rounded-2xl;
