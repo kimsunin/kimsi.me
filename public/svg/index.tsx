@@ -14,6 +14,8 @@ import BmwIc from "./bmw.svg";
 import CategoryIc from "./category.svg";
 import CalendarIc from "./calendar.svg";
 import QuotesIc from "./quotes.svg";
+import RocketIc from "./rocket.svg";
+import CraftIc from "./craft.svg";
 
 export {
   ErrorImgIc,
@@ -32,4 +34,6 @@ export {
   CategoryIc,
   CalendarIc,
   QuotesIc,
+  RocketIc,
+  CraftIc,
 };

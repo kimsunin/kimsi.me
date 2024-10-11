@@ -48,17 +48,24 @@ function MainPage() {
           type={"nonghaeng"}
           href={"https://nonghaeng.site"}
           title={"농행동행"}
-          subtitle={"link to nonghaeng"}
+          subtitle={"농촌관광 서비스 농행동행"}
           target={"_blank"}
+        />
+      </li>
+      <li className="craft-item">
+        <LinkBox
+          type="blog_v1"
+          href="/craft/blog"
+          title="Blog_v1"
+          subtitle="김선인의 첫번째 기술 블로그"
         />
       </li>
       <li className={"craft-item"}>
         <LinkBox
           type={"bookShare"}
-          href={"https://book.kimsi.me"}
+          href={"craft/book"}
           title={"BOOK-SHARE"}
-          subtitle={"link to book-share"}
-          target={"_blank"}
+          subtitle={"도서대출 웹 서비스"}
         />
       </li>
       <li className={"craft-item"}>
@@ -66,7 +73,7 @@ function MainPage() {
           type={"bmw"}
           href={"/craft/bmw"}
           title={"BMW"}
-          subtitle={"link to bmw"}
+          subtitle={"canvas태그를 이용한 자동차 게임"}
         />
       </li>
       <h4>STACKS 💻</h4>

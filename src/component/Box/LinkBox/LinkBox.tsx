@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { BlogIc, BmwIc, BookIc, MailIc, NongHaengIc } from "svg/index";
+import {
+  BlogIc,
+  BmwIc,
+  BookIc,
+  CraftIc,
+  MailIc,
+  NongHaengIc,
+  RocketIc,
+} from "svg/index";
 
 const iconMap: Record<string, React.ElementType> = {
   blog: BlogIc,
@@ -7,6 +15,8 @@ const iconMap: Record<string, React.ElementType> = {
   nonghaeng: NongHaengIc,
   bookShare: BookIc,
   bmw: BmwIc,
+  blog_v1: RocketIc,
+  craft: CraftIc,
 };
 
 type PropsType = {
