@@ -14,6 +14,7 @@ function Page({ params }: { params: { id: string } }) {
 
   React.useEffect(() => {
     getData(params.id).then(async (res: BlogType) => {
+      console.log(res);
       if (res.status == 200) {
         setData(res.data);
         setVisible(true);

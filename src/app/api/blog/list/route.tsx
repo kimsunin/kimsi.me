@@ -1,14 +1,14 @@
-import { BlogContentGroupListType } from "@/type/BlogType";
 import { supabase } from "@/util/supabase";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
+import { BlogContentGroupListType } from "@/type/BlogType";
 
-export async function GET() {
+export async function GET(req: NextRequest) {
   const datas: BlogContentGroupListType = { dev: [], engin: [], note: [] };
 
   const getDevData = async () => {
     const { data } = await supabase
       .from("dev")
-      .select("id,title,date,img_url")
+      .select("id,title,sub_title, date,img_url")
       .range(0, 3)
       .order("date", { ascending: false });
     if (data) {
@@ -19,7 +19,7 @@ export async function GET() {
   const getEnginData = async () => {
     const { data } = await supabase
       .from("engin")
-      .select("id,title,date,img_url")
+      .select("id,title,sub_title,date,img_url")
       .range(0, 3)
       .order("date", { ascending: false });
     if (data) {
@@ -30,7 +30,7 @@ export async function GET() {
   const getNoteData = async () => {
     const { data } = await supabase
       .from("note")
-      .select("id,title,date,img_url")
+      .select("id,title,sub_title,date,img_url")
       .range(0, 3)
       .order("date", { ascending: false });
     if (data) {

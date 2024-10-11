@@ -7,7 +7,7 @@ export async function GET(
 ) {
   const { data, error } = await supabase
     .from(params.id)
-    .select("id,title,date,img_url")
+    .select("id,title,sub_title,date,img_url")
     .order("date", { ascending: false });
 
   if (data) {

@@ -12,6 +12,7 @@ function BlogContentList({ type, data }: PropsType) {
         <CustomImage src={item.img_url} />
         <div>
           <h4>{item.title}</h4>
+          <p>{item.sub_title}</p>
           <span>{item.date}</span>
         </div>
       </Link>
