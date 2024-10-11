@@ -21,24 +21,24 @@ function MainPage() {
         <LinkBox
           type={"blog"}
           href={"/blog/list"}
-          title={"BLOG"}
+          title={"Blog"}
           subtitle={"link to blog"}
         />
       </li>
       <li className="memo">
         <MemoBox />
       </li>
-      <li className={"sound"}>
-        <SoundSwitchBox />
-      </li>
       <li className={"img"}>
         <CustomImage src={"/gif/insideout-anxiety.gif"} />
+      </li>
+      <li className={"sound"}>
+        <SoundSwitchBox />
       </li>
       <li className={"gmail"}>
         <LinkBox
           type={"gmail"}
           href={"mailto:suninkim10@gmail.com"}
-          title={"GMAIL"}
+          title={"Gmail"}
           subtitle={"suninkim10 @gmail.com"}
         />
       </li>
@@ -65,7 +65,7 @@ function MainPage() {
         <LinkBox
           type={"bookShare"}
           href={"https://book.kimsi.me"}
-          title={"BOOK-SHARE"}
+          title={"Book-Share"}
           subtitle={"도서대출 웹 서비스"}
           target={"_blank"}
         />
@@ -74,7 +74,7 @@ function MainPage() {
         <LinkBox
           type={"bmw"}
           href={"https://bmw.kimsi.me"}
-          title={"BMW"}
+          title={"Bmw"}
           subtitle={"canvas태그를 이용한 자동차 게임"}
           target={"_blank"}
         />

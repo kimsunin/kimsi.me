@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import { BlogContentTitle, MarkDownView } from "@/component";
+import { BlogComment, BlogContentTitle, MarkDownView } from "@/component";
 import { useDialog } from "@/hook/useDialog";
 import { BlogContenDetailType, BlogType } from "@/type/BlogType";
 
@@ -30,6 +30,7 @@ function Page({ params }: { params: { slug: string[] } }) {
       <article>
         <BlogContentTitle title={data?.title} date={data?.date} />
         <MarkDownView post={data?.content} />
+        <BlogComment />
       </article>
     </section>
   );

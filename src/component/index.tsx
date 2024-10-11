@@ -14,6 +14,7 @@ import CustomConfirm from "./CustomConfirm/CustomConfirm";
 import CustomPrompt from "./CustomPrompt/CustomPrompt";
 import MemoBox from "./Box/MemoBox/Memobox";
 import MainPage from "./MainPage/MainPage";
+import BlogComment from "./Blog/BlogComment/BlogComment";
 
 export {
   Kimsunin,
@@ -32,4 +33,5 @@ export {
   CustomPrompt,
   MemoBox,
   MainPage,
+  BlogComment,
 };
