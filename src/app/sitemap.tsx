@@ -14,11 +14,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.8,
     },
-    {
-      url: "https://kimsi.me/craft",
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.8,
-    },
   ];
 }
