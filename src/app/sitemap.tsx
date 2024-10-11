@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://kimsi.blog",
+      url: "https://kimsi/craft",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.8,
