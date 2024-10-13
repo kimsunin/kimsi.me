@@ -20,7 +20,7 @@ function MainPage() {
       <li className={"blog"}>
         <LinkBox
           type={"blog"}
-          href={"/blog/list"}
+          href={"/blog"}
           title={"Blog"}
           subtitle={"link to blog"}
         />

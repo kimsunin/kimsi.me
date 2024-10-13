@@ -13,7 +13,7 @@ export default function CraftLayout({
 }>) {
   return (
     <main>
-      <Header href="/blog/list" title="Blog" />
+      <Header href="/blog" title="Blog" />
       {children}
     </main>
   );

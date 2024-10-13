@@ -30,7 +30,7 @@ function Page() {
       <article>
         <BlogContentListTitle
           title="「 develop 」 - 개발에 관한 기록"
-          href="/blog/list/dev"
+          href="/blog/dev"
         />
         <div>
           {data?.dev.length ? (
@@ -43,7 +43,7 @@ function Page() {
       <article className="my-[80px]">
         <BlogContentListTitle
           title="「 engineering 」 - 공학에 관한 기록"
-          href="/blog/list/engin"
+          href="/blog/engin"
         />
         <div>
           {data?.engin.length ? (
@@ -56,7 +56,7 @@ function Page() {
       <article>
         <BlogContentListTitle
           title="「 note 」 - 제약없이 자유로운 기록"
-          href="/blog/list/note"
+          href="/blog/note"
         />
         <div>
           {data?.note.length ? (

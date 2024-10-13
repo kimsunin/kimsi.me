@@ -29,6 +29,9 @@
   .memo {
     @apply col-span-full;
   }
+  .memo > * {
+    @apply bg-yellow-50 dark:bg-opacity-10;
+  }
 }
 
 @screen pc {
@@ -61,6 +64,9 @@
   }
   .memo {
     @apply col-span-full;
+  }
+  .memo > * {
+    @apply bg-yellow-50 dark:bg-opacity-10;
   }
 }
 
@@ -95,6 +101,9 @@
   .memo {
     @apply col-span-full;
   }
+  .memo > * {
+    @apply bg-yellow-50 dark:bg-opacity-10;
+  }
 }
 
 @screen mobile {
@@ -115,5 +124,8 @@
   }
   .memo {
     @apply col-span-full;
+  }
+  .memo > * {
+    @apply bg-yellow-50 dark:bg-opacity-10;
   }
 }
