@@ -1,5 +1,8 @@
+.header {
+  @apply mb-[20px];
+}
 .header > div {
-  @apply mb-[20px] flex items-center justify-between;
+  @apply flex items-center justify-between;
 }
 .header > div > a {
   @apply text-[36px] font-[500];
