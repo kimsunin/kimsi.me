@@ -1,0 +1,9 @@
+.blog-list-title {
+  @apply mb-[20px] flex justify-between items-center;
+}
+.blog-list-title > a {
+  @apply text-black/40 dark:text-white/40;
+}
+.blog-list-title > a:hover {
+  @apply bg-transparent transform-none;
+}

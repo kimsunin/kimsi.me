@@ -67,20 +67,3 @@ h4 {
 .not-found-page > div > a {
   @apply px-[10px] py-[4px] border rounded-md;
 }
-
-/* list-page */
-.list-article {
-  @apply mb-[80px];
-}
-.list-article > h3 {
-  @apply mb-[20px];
-}
-.list-article > div {
-  @apply mb-[20px] flex justify-between items-center;
-}
-.list-article > div > a {
-  @apply text-black/40 dark:text-white/40;
-}
-.list-article > div > a:hover {
-  @apply bg-transparent transform-none;
-}

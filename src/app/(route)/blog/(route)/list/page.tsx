@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { BlogContentList } from "@/component";
+import { BlogContentList, BlogContentListTitle } from "@/component";
 import { BlogContentGroupListType, BlogType } from "@/type/BlogType";
 import { useDialog } from "@/hook/useDialog";
 
@@ -28,11 +27,11 @@ function Page() {
 
   return (
     <section className={visible ? "is-visible" : "is-invisible"}>
-      <article className="list-article">
-        <div>
-          <h3>「 develop 」 - 개발에 관한 기록</h3>
-          <Link href="/blog/list/dev">더보기</Link>
-        </div>
+      <article>
+        <BlogContentListTitle
+          title="「 develop 」 - 개발에 관한 기록"
+          href="/blog/list/dev"
+        />
         <div>
           {data?.dev.length ? (
             <BlogContentList type="dev" data={data?.dev} />
@@ -41,11 +40,11 @@ function Page() {
           )}
         </div>
       </article>
-      <article className="list-article">
-        <div>
-          <h3>「 engineering 」 - 공학에 관한 기록</h3>
-          <Link href="/blog/list/engin">더보기</Link>
-        </div>
+      <article className="my-[80px]">
+        <BlogContentListTitle
+          title="「 engineering 」 - 공학에 관한 기록"
+          href="/blog/list/engin"
+        />
         <div>
           {data?.engin.length ? (
             <BlogContentList type="engin" data={data?.engin} />
@@ -54,11 +53,11 @@ function Page() {
           )}
         </div>
       </article>
-      <article className="list-article">
-        <div>
-          <h3>「 note 」 - 제약없이 자유로운 기록</h3>
-          <Link href="/blog/list/note">더보기</Link>
-        </div>
+      <article>
+        <BlogContentListTitle
+          title="「 note 」 - 제약없이 자유로운 기록"
+          href="/blog/list/note"
+        />
         <div>
           {data?.note.length ? (
             <BlogContentList type="note" data={data?.note} />
