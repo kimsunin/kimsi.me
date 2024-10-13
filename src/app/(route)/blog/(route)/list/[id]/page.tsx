@@ -30,9 +30,9 @@ function Page({ params }: { params: { id: string } }) {
     <section className={visible ? "is-visible" : "is-invisible"}>
       <article className="list-article">
         <h3>
-          {params.id == "dev" && "develop - 개발에 관한 기록"}
-          {params.id == "engin" && "engineering - 공학에 관한 기록"}
-          {params.id == "note" && "note - 제약없이 자유로운 기록"}
+          {params.id == "dev" && "「 develop 」 - 개발에 관한 기록"}
+          {params.id == "engin" && "「 engineering 」 - 공학에 관한 기록"}
+          {params.id == "note" && "「 note 」 - 제약없이 자유로운 기록"}
         </h3>
         <div>
           {data ? (

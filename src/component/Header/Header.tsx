@@ -6,12 +6,12 @@ import "./Header.css";
 import { blogCategoryModel, craftCategoryModel } from "@/model/index";
 import { CategoryIc } from "svg/index";
 
-type ProptType = {
+type PropsType = {
   href: string;
   title: string;
 };
 
-function Header({ href, title }: ProptType) {
+function Header({ href, title }: PropsType) {
   const pathName = usePathname();
   const [isClick, setIsClick] = useState(false);
 

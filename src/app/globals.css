@@ -70,7 +70,7 @@ h4 {
 
 /* list-page */
 .list-article {
-  @apply my-[40px];
+  @apply mb-[80px];
 }
 .list-article > h3 {
   @apply mb-[20px];
