@@ -18,7 +18,7 @@
     @apply col-span-1;
   }
   .img {
-    @apply h-[360px]  col-span-3 row-span-2 rounded-2xl;
+    @apply h-[360px]  col-span-2 row-span-2 rounded-2xl;
   }
   .img * {
     @apply w-full h-full rounded-2xl;
@@ -31,6 +31,9 @@
   }
   .memo > * {
     @apply bg-yellow-50 dark:bg-opacity-10;
+  }
+  .map {
+    @apply h-[360px] col-span-2 row-span-2;
   }
 }
 
@@ -68,6 +71,9 @@
   .memo > * {
     @apply bg-yellow-50 dark:bg-opacity-10;
   }
+  .map {
+    @apply col-span-3 row-span-1 h-[160px];
+  }
 }
 
 @screen tablet {
@@ -104,6 +110,9 @@
   .memo > * {
     @apply bg-yellow-50 dark:bg-opacity-10;
   }
+  .map {
+    @apply col-span-3 row-span-1 h-[160px];
+  }
 }
 
 @screen mobile {
@@ -127,5 +136,8 @@
   }
   .memo > * {
     @apply bg-yellow-50 dark:bg-opacity-10;
+  }
+  .map {
+    @apply col-span-2 row-span-1 h-[160px];
   }
 }

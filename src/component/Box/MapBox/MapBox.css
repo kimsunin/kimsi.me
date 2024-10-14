@@ -1,0 +1,33 @@
+.map-box {
+  @apply w-full h-full rounded-2xl relative;
+}
+.map-box:hover {
+  @apply bg-transparent;
+}
+
+/* 이미지 영역 */
+.map-box > div:nth-child(1) {
+  @apply w-full h-full;
+}
+.map-box > div:nth-child(1) * {
+  @apply w-full h-full rounded-2xl;
+}
+
+/* 현재위치 영역 */
+.map-box > div:nth-child(2) {
+  @apply w-full h-full absolute  top-0 left-0 flex justify-center items-center;
+}
+.map-box > div:nth-child(2) > div:nth-child(1) {
+  @apply w-[24px] h-[24px] absolute rounded-full bg-blue-400 border-[4px] border-white dark:bg-black/90 dark:border-white/40 z-10;
+}
+.map-box > div:nth-child(2) > div:nth-child(2) {
+  @apply absolute bg-blue-400 rounded-full dark:bg-black/90;
+}
+.isAnimated {
+  transition: width 4s ease-out, height 4s ease-out, opacity 4s ease-out;
+}
+
+/* 위치 텍스트 영역 */
+.map-box > div:nth-child(3) {
+  @apply px-[10px] py-[4px] left-[10px] absolute bottom-[10px] border  rounded-lg  bg-white/90 dark:bg-black/80;
+}

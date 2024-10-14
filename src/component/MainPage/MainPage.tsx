@@ -5,6 +5,7 @@ import {
   SoundSwitchBox,
   CustomImage,
   MemoBox,
+  MapBox,
 } from "@/component";
 import "./MainPage.css";
 
@@ -41,6 +42,9 @@ function MainPage() {
           title={"Gmail"}
           subtitle={"suninkim10 @gmail.com"}
         />
+      </li>
+      <li className="map">
+        <MapBox />
       </li>
       <h4>CRAFTS 🛠️</h4>
       <li className={"craft-item"}>
