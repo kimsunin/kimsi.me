@@ -5,6 +5,9 @@
   .main-page {
     @apply h-full grid grid-rows-[160px] grid-cols-4 gap-[40px];
   }
+  .main-page > li {
+    @apply min-h-[160px];
+  }
   .github {
     @apply col-span-4;
   }
@@ -43,6 +46,9 @@
   }
   .main-page {
     @apply h-full grid grid-rows-[160px] grid-cols-3 gap-[40px];
+  }
+  .main-page > li {
+    @apply min-h-[160px];
   }
   .github {
     @apply col-span-full row-span-1;
@@ -83,6 +89,9 @@
   .main-page {
     @apply h-full grid grid-rows-[160px] grid-cols-3 gap-[20px];
   }
+  .main-page > li {
+    @apply min-h-[160px];
+  }
   .github {
     @apply col-span-full row-span-1;
   }
@@ -118,6 +127,9 @@
 @screen mobile {
   h4 {
     @apply col-span-2;
+  }
+  .main-page > li {
+    @apply min-h-[160px];
   }
   .main-page {
     @apply h-full grid grid-rows-[160px] grid-cols-2 gap-[20px];

@@ -6,7 +6,7 @@ function BlogListPage() {
   return (
     <ul className="blog-list-page">
       <li className="memo">
-        <MemoBox text="김선인의 두번재 블로그 입니다" />
+        <MemoBox text="김선인의 두번째 블로그 입니다" />
       </li>
       <li className="rotate-r">
         <LinkBox
@@ -29,7 +29,7 @@ function BlogListPage() {
           type="blog"
           href="/blog/note"
           title="note"
-          subtitle="제약없이 자유로운"
+          subtitle="제약없이 자유로운 기록"
         />
       </li>
     </ul>
