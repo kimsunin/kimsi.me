@@ -15,7 +15,6 @@ import CustomPrompt from "./CustomPrompt/CustomPrompt";
 import MemoBox from "./Box/MemoBox/Memobox";
 import MainPage from "./MainPage/MainPage";
 import BlogComment from "./Blog/BlogComment/BlogComment";
-import BlogContentListTitle from "./Blog/BlogContentListTitle/BlogContentListTitle";
 import MapBox from "./Box/MapBox/MapBox";
 
 export {
@@ -36,6 +35,5 @@ export {
   MemoBox,
   MainPage,
   BlogComment,
-  BlogContentListTitle,
   MapBox,
 };

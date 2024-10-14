@@ -2,7 +2,7 @@
 import React from "react";
 import { useDialog } from "@/hook/useDialog";
 import { useRouter } from "next/navigation";
-import { BlogContentList, BlogContentListTitle, MemoBox } from "@/component";
+import { BlogContentList, MemoBox } from "@/component";
 import { BlogContentListType, BlogType } from "@/type/BlogType";
 
 function Page({ params }: { params: { id: string } }) {
