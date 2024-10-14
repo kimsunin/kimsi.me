@@ -2,7 +2,7 @@
 import React from "react";
 import { useDialog } from "@/hook/useDialog";
 import { useRouter } from "next/navigation";
-import { BlogContentList, BlogContentListTitle } from "@/component";
+import { BlogContentList, BlogContentListTitle, MemoBox } from "@/component";
 import { BlogContentListType, BlogType } from "@/type/BlogType";
 
 function Page({ params }: { params: { id: string } }) {
@@ -39,7 +39,9 @@ function Page({ params }: { params: { id: string } }) {
   return (
     <section className={visible ? "is-visible" : "is-invisible"}>
       <article className="list-article">
-        <BlogContentListTitle title={title} />
+        <div className="memo mb-[40px]">
+          <MemoBox text={title} />
+        </div>
         <div>
           {data ? (
             <BlogContentList type={params.id} data={data} />

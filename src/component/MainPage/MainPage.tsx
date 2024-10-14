@@ -12,13 +12,13 @@ import "./MainPage.css";
 function MainPage() {
   return (
     <ul className={"main-page"}>
-      <li className={"github"}>
+      <li className={"github hover:rotate-1 duration-200"}>
         <GithubLinkBox />
       </li>
-      <li className={"theme"}>
+      <li className={"theme rotate-r"}>
         <ThemeSwitchBox />
       </li>
-      <li className={"blog"}>
+      <li className={"blog rotate-l"}>
         <LinkBox
           type={"blog"}
           href={"/blog"}
@@ -27,15 +27,15 @@ function MainPage() {
         />
       </li>
       <li className="memo">
-        <MemoBox />
+        <MemoBox text="끊임없이 고민하고 사색하며 기록하고자 노력합니다." />
       </li>
       <li className={"img"}>
         <CustomImage src={"/gif/insideout-anxiety.gif"} />
       </li>
-      <li className={"sound"}>
+      <li className={"sound rotate-r"}>
         <SoundSwitchBox />
       </li>
-      <li className={"gmail"}>
+      <li className={"gmail rotate-l"}>
         <LinkBox
           type={"gmail"}
           href={"mailto:suninkim10@gmail.com"}
@@ -43,11 +43,11 @@ function MainPage() {
           subtitle={"suninkim10 @gmail.com"}
         />
       </li>
-      <li className="map">
+      <li className="map rotate-r">
         <MapBox />
       </li>
       <h4>CRAFTS 🛠️</h4>
-      <li className={"craft-item"}>
+      <li className={"craft-item rotate-l"}>
         <LinkBox
           type={"nonghaeng"}
           href={"https://nonghaeng.site"}
@@ -56,7 +56,7 @@ function MainPage() {
           target={"_blank"}
         />
       </li>
-      <li className="craft-item">
+      <li className="craft-item rotate-l">
         <LinkBox
           type="blog_v1"
           href="https://blog.kimsi.me"
@@ -65,7 +65,7 @@ function MainPage() {
           target={"_blank"}
         />
       </li>
-      <li className={"craft-item"}>
+      <li className={"craft-item rotate-r"}>
         <LinkBox
           type={"bookShare"}
           href={"https://book.kimsi.me"}
@@ -74,7 +74,7 @@ function MainPage() {
           target={"_blank"}
         />
       </li>
-      <li className={"craft-item"}>
+      <li className={"craft-item rotate-l"}>
         <LinkBox
           type={"bmw"}
           href={"https://bmw.kimsi.me"}

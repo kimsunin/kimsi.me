@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import CustomImage from "@/component/CustomImage/CustomImage";
-import "./MapBox.css";
 import Link from "next/link";
+import "./MapBox.css";
 
 function MapBox() {
   const [isAnimated, setIsAnimated] = React.useState(false);
