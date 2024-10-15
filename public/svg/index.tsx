@@ -16,6 +16,8 @@ import CalendarIc from "./calendar.svg";
 import QuotesIc from "./quotes.svg";
 import RocketIc from "./rocket.svg";
 import CraftIc from "./craft.svg";
+import DevelopIc from "./develop.svg";
+import PencilIc from "./pencil.svg";
 
 export {
   ErrorImgIc,
@@ -36,4 +38,6 @@ export {
   QuotesIc,
   RocketIc,
   CraftIc,
+  DevelopIc,
+  PencilIc,
 };

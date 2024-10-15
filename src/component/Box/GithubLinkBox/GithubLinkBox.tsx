@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import dayjs from "dayjs";
@@ -8,10 +8,10 @@ import "./GithubLinkBox.css";
 import { GithubIc } from "svg/index";
 
 function GithubLinkBox() {
-  const [data, setData] = useState<Record<string, number>>({});
+  const [data, setData] = React.useState<Record<string, number>>({});
   const { resolvedTheme } = useTheme();
 
-  useEffect(() => {
+  React.useEffect(() => {
     fetch("https://api.github.com/graphql", {
       method: "POST",
       headers: new Headers({

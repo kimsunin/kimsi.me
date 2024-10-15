@@ -38,7 +38,7 @@ function Page({ params }: { params: { id: string } }) {
 
   return (
     <section className={visible ? "is-visible" : "is-invisible"}>
-      <article className="list-article">
+      <article>
         <div className="memo mb-[40px]">
           <MemoBox text={title} />
         </div>

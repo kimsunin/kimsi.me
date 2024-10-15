@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React from "react";
 import "./CustomPrompt.css";
 
 type PropsType = {
@@ -9,7 +9,7 @@ type PropsType = {
 };
 
 function CustomPrompt({ message, onClickOk, onClickCancel }: PropsType) {
-  const [value, setValue] = useState("");
+  const [value, setValue] = React.useState("");
 
   return (
     <div className="custom-prompt">

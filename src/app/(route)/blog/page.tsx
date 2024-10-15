@@ -1,6 +1,6 @@
 "use client";
-import BlogListPage from "@/component/Blog/BlogListPage/BlogListPage";
 import React from "react";
+import { BlogListPage } from "@/component";
 
 function Page() {
   const [visible, setVisible] = React.useState(false);

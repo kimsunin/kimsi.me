@@ -10,7 +10,7 @@ function BlogListPage() {
       </li>
       <li className="rotate-r">
         <LinkBox
-          type="blog"
+          type="dev"
           href="/blog/dev"
           title="develop"
           subtitle="개발에 관한 기록"
@@ -18,7 +18,7 @@ function BlogListPage() {
       </li>
       <li className="rotate-l">
         <LinkBox
-          type="blog"
+          type="craft"
           href="/blog/engin"
           title="engineering"
           subtitle="공학에 관한 기록"
@@ -26,7 +26,7 @@ function BlogListPage() {
       </li>
       <li className="rotate-r">
         <LinkBox
-          type="blog"
+          type="note"
           href="/blog/note"
           title="note"
           subtitle="제약없이 자유로운 기록"

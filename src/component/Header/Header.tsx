@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import React from "react";
 import { usePathname } from "next/navigation";
 import "./Header.css";
 import { blogCategoryModel, craftCategoryModel } from "@/model/index";
@@ -13,7 +13,7 @@ type PropsType = {
 
 function Header({ href, title }: PropsType) {
   const pathName = usePathname();
-  const [isClick, setIsClick] = useState(false);
+  const [isClick, setIsClick] = React.useState(false);
 
   const blogCategoryList = blogCategoryModel.map((item, index) => (
     <li key={index}>
