@@ -3,7 +3,6 @@ import ThemeSwitchBox from "./Box/ThemeSwitchBox/ThemeSwitchBox";
 import SoundSwitchBox from "./Box/SoundSwitchBox/SoundSwitchBox";
 import LinkBox from "./Box/LinkBox/LinkBox";
 import Kimsunin from "./Kimsunin/Kimsunin";
-import BmwCanvas from "./BmwCanvas/BmwCanvas";
 import CustomImage from "./CustomImage/CustomImage";
 import Header from "./Header/Header";
 import BlogContentList from "./Blog/BlogContentList/BlogContentList";
@@ -23,7 +22,6 @@ export {
   GithubLinkBox,
   ThemeSwitchBox,
   SoundSwitchBox,
-  BmwCanvas,
   CustomImage,
   LinkBox,
   Header,

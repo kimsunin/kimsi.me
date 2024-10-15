@@ -31,20 +31,6 @@ h4 {
   @apply opacity-0;
 }
 
-/* 회전효과 */
-.rotate-r:hover {
-  @apply rotate-2 duration-200;
-}
-.rotate-r {
-  @apply duration-200;
-}
-.rotate-l:hover {
-  @apply -rotate-2 duration-200;
-}
-.rotate-l {
-  @apply duration-200;
-}
-
 /*박스*/
 .box {
   @apply w-full h-full min-h-[160px] p-[20px] flex justify-start border rounded-2xl;
@@ -68,4 +54,68 @@ h4 {
 }
 .not-found-page > div > a {
   @apply px-[10px] py-[4px] border rounded-md;
+}
+
+/* 화면별 스타일 */
+@screen pc-large {
+  /* 레이아웃 */
+  .list-page-layout {
+    @apply grid grid-cols-4 grid-rows-[160px] gap-[40px];
+  }
+  .list-page-layout > li {
+    @apply min-h-[160px];
+  }
+
+  /* 회전효과 */
+  .rotate-r:hover {
+    @apply rotate-2 duration-200;
+  }
+  .rotate-r {
+    @apply duration-200;
+  }
+  .rotate-l:hover {
+    @apply -rotate-2 duration-200;
+  }
+  .rotate-l {
+    @apply duration-200;
+  }
+}
+@screen pc {
+  /* 레이아웃 */
+  .list-page-layout {
+    @apply grid grid-cols-3 grid-rows-[160px] gap-[40px];
+  }
+  .list-page-layout > li {
+    @apply min-h-[160px];
+  }
+
+  /* 회전효과 */
+  .rotate-r:hover {
+    @apply rotate-2 duration-200;
+  }
+  .rotate-r {
+    @apply duration-200;
+  }
+  .rotate-l:hover {
+    @apply -rotate-2 duration-200;
+  }
+  .rotate-l {
+    @apply duration-200;
+  }
+}
+@screen tablet {
+  .list-page-layout {
+    @apply grid grid-cols-3 grid-rows-[160px] gap-[20px];
+  }
+  .list-page-layout > li {
+    @apply min-h-[160px];
+  }
+}
+@screen mobile {
+  .list-page-layout {
+    @apply grid grid-cols-2 grid-rows-[160px] gap-[20px];
+  }
+  .list-page-layout > li {
+    @apply min-h-[160px];
+  }
 }

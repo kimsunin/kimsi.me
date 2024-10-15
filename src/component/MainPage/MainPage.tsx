@@ -11,9 +11,12 @@ import "./MainPage.css";
 
 function MainPage() {
   return (
-    <ul className={"main-page"}>
-      <li className={"github hover:rotate-1 duration-200"}>
+    <ul className={"list-page-layout"}>
+      <li className={"github pc:hover:rotate-1 pc-large:rotate-1 duration-200"}>
         <GithubLinkBox />
+      </li>
+      <li className={"surf-img img"}>
+        <CustomImage src={"/img/surf.jpg"} />
       </li>
       <li className={"theme rotate-r"}>
         <ThemeSwitchBox />
@@ -29,7 +32,7 @@ function MainPage() {
       <li className="memo">
         <MemoBox text="끊임없이 고민하고 사색하며 기록하고자 노력합니다." />
       </li>
-      <li className={"img"}>
+      <li className={"anxiety-img img"}>
         <CustomImage src={"/gif/insideout-anxiety.gif"} />
       </li>
       <li className={"sound rotate-r"}>

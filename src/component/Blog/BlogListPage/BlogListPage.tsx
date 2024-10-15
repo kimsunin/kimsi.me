@@ -4,11 +4,11 @@ import LinkBox from "@/component/Box/LinkBox/LinkBox";
 
 function BlogListPage() {
   return (
-    <ul className="blog-list-page">
+    <ul className="list-page-layout">
       <li className="memo">
         <MemoBox text="김선인의 두번째 블로그 입니다" />
       </li>
-      <li className="rotate-r">
+      <li className="dev rotate-r">
         <LinkBox
           type="dev"
           href="/blog/dev"
@@ -16,7 +16,7 @@ function BlogListPage() {
           subtitle="개발에 관한 기록"
         />
       </li>
-      <li className="rotate-l">
+      <li className="engin rotate-l">
         <LinkBox
           type="craft"
           href="/blog/engin"
@@ -24,7 +24,7 @@ function BlogListPage() {
           subtitle="공학에 관한 기록"
         />
       </li>
-      <li className="rotate-r">
+      <li className="note rotate-r">
         <LinkBox
           type="note"
           href="/blog/note"

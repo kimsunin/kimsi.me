@@ -6,7 +6,7 @@ type PropsType = {
 
 function MemoBox({ text }: PropsType) {
   return (
-    <div className="box">
+    <div className="box bg-yellow-50 dark:bg-opacity-10">
       <div>
         <div className="icon-box">
           <QuotesIc />
