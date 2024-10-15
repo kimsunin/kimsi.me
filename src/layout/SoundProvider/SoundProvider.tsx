@@ -1,20 +1,20 @@
 "use client";
-import { useEffect, useState, ReactNode } from "react";
+import React from "react";
 import { SoundContext } from "@/hook/useSound";
 import useStickyState from "@/hook/useStickyState";
 
 // Define a type for the context value
 
 interface SoundProviderProps {
-  children: ReactNode;
+  children: React.ReactNode;
   initialSound?: boolean;
 }
 
 function SoundProvider({ children, initialSound = true }: SoundProviderProps) {
   const [sound, setSound] = useStickyState(initialSound, "sound");
-  const [isMount, setMount] = useState(false);
+  const [isMount, setMount] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     setMount(true);
   }, []);
 

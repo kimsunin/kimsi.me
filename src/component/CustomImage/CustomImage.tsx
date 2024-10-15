@@ -1,6 +1,6 @@
 "use client";
+import React from "react";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import "./CustomImage.css";
 import { ErrorImgIc } from "svg/index";
 
@@ -10,9 +10,9 @@ type PropsType = {
 
 // 이미지가 없는 경우 에뤄 발생 -> true -> 기본이미지 렌더링
 function CustomImage({ src }: PropsType) {
-  const [isImgError, setIsImgError] = useState<boolean>(true);
+  const [isImgError, setIsImgError] = React.useState<boolean>(true);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (src == null || "" || undefined) {
       setIsImgError(true);
     } else setIsImgError(false);

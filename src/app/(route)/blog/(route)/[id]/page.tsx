@@ -2,7 +2,7 @@
 import React from "react";
 import { useDialog } from "@/hook/useDialog";
 import { useRouter } from "next/navigation";
-import { BlogContentList } from "@/component";
+import { BlogContentList, MemoBox } from "@/component";
 import { BlogContentListType, BlogType } from "@/type/BlogType";
 
 function Page({ params }: { params: { id: string } }) {
@@ -11,8 +11,18 @@ function Page({ params }: { params: { id: string } }) {
 
   const [data, setData] = React.useState<BlogContentListType>();
   const [visible, setVisible] = React.useState(false);
+  const [title, setTitle] = React.useState("");
 
   React.useEffect(() => {
+    if (params.id == "dev") {
+      setTitle("「 develop 」 - 개발에 관한 기록");
+    }
+    if (params.id == "engin") {
+      setTitle("「 engineering 」 - 공학에 관한 기록");
+    }
+    if (params.id == "note") {
+      setTitle("「 note 」 - 제약없이 자유로운 기록");
+    }
     getData(params.id).then(async (res: BlogType) => {
       console.log(res);
       if (res.status == 200) {
@@ -28,12 +38,10 @@ function Page({ params }: { params: { id: string } }) {
 
   return (
     <section className={visible ? "is-visible" : "is-invisible"}>
-      <article className="list-article">
-        <h3>
-          {params.id == "dev" && "「 develop 」 - 개발에 관한 기록"}
-          {params.id == "engin" && "「 engineering 」 - 공학에 관한 기록"}
-          {params.id == "note" && "「 note 」 - 제약없이 자유로운 기록"}
-        </h3>
+      <article>
+        <div className="memo mb-[40px]">
+          <MemoBox text={title} />
+        </div>
         <div>
           {data ? (
             <BlogContentList type={params.id} data={data} />

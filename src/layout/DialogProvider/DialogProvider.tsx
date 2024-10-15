@@ -2,7 +2,7 @@
 import React from "react";
 import { DialogContext } from "@/hook/useDialog";
 import { CustomAlert, CustomConfirm, CustomPrompt } from "@/component";
-import Overlay from "@/layout/Overlay/Overlay";
+import { Overlay } from "../index";
 
 type AlertState = {
   type: "alert";

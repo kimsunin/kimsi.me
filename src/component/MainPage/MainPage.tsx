@@ -5,36 +5,44 @@ import {
   SoundSwitchBox,
   CustomImage,
   MemoBox,
+  MapBox,
 } from "@/component";
 import "./MainPage.css";
 
 function MainPage() {
   return (
-    <ul className={"main-page"}>
-      <li className={"github"}>
+    <ul className={"list-page-layout"}>
+      <li
+        className={
+          "github pc:hover:rotate-1 pc-large:hover:rotate-1 duration-200"
+        }
+      >
         <GithubLinkBox />
       </li>
-      <li className={"theme"}>
+      <li className={"surf-img img"}>
+        <CustomImage src={"/img/surf.jpg"} />
+      </li>
+      <li className={"theme rotate-r"}>
         <ThemeSwitchBox />
       </li>
-      <li className={"blog"}>
+      <li className={"blog rotate-l"}>
         <LinkBox
           type={"blog"}
-          href={"/blog/list"}
+          href={"/blog"}
           title={"Blog"}
           subtitle={"link to blog"}
         />
       </li>
       <li className="memo">
-        <MemoBox />
+        <MemoBox text="끊임없이 고민하고 사색하며 기록하고자 노력합니다." />
       </li>
-      <li className={"img"}>
+      <li className={"anxiety-img img"}>
         <CustomImage src={"/gif/insideout-anxiety.gif"} />
       </li>
-      <li className={"sound"}>
+      <li className={"sound rotate-r"}>
         <SoundSwitchBox />
       </li>
-      <li className={"gmail"}>
+      <li className={"gmail rotate-l"}>
         <LinkBox
           type={"gmail"}
           href={"mailto:suninkim10@gmail.com"}
@@ -42,8 +50,11 @@ function MainPage() {
           subtitle={"suninkim10 @gmail.com"}
         />
       </li>
+      <li className="map rotate-r">
+        <MapBox />
+      </li>
       <h4>CRAFTS 🛠️</h4>
-      <li className={"craft-item"}>
+      <li className={"craft-item rotate-l"}>
         <LinkBox
           type={"nonghaeng"}
           href={"https://nonghaeng.site"}
@@ -52,7 +63,7 @@ function MainPage() {
           target={"_blank"}
         />
       </li>
-      <li className="craft-item">
+      <li className="craft-item rotate-l">
         <LinkBox
           type="blog_v1"
           href="https://blog.kimsi.me"
@@ -61,7 +72,7 @@ function MainPage() {
           target={"_blank"}
         />
       </li>
-      <li className={"craft-item"}>
+      <li className={"craft-item rotate-r"}>
         <LinkBox
           type={"bookShare"}
           href={"https://book.kimsi.me"}
@@ -70,7 +81,7 @@ function MainPage() {
           target={"_blank"}
         />
       </li>
-      <li className={"craft-item"}>
+      <li className={"craft-item rotate-l"}>
         <LinkBox
           type={"bmw"}
           href={"https://bmw.kimsi.me"}

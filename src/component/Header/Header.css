@@ -1,11 +1,11 @@
+.header {
+  @apply mb-[20px];
+}
 .header > div {
-  @apply mb-[20px] flex items-center justify-between;
+  @apply flex items-center justify-between;
 }
 .header > div > a {
   @apply text-[36px] font-[500];
-}
-.header > div > a:hover {
-  @apply bg-transparent transform-none;
 }
 .header > div > button {
   @apply w-[40px] h-[40px] flex justify-center items-center rounded-lg border;
@@ -23,9 +23,6 @@
 }
 .header > ul > li > a:hover {
   @apply text-black/80 dark:text-white/60;
-}
-.header > ul > li > a:hover {
-  @apply bg-transparent transform-none;
 }
 .category-on {
   @apply h-[90px] duration-300;

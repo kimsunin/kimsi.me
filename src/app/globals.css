@@ -9,18 +9,6 @@ body * {
   @apply border-black/10 dark:border-white/20;
 }
 
-/*a, button*/
-a,
-button {
-  @apply block duration-300;
-  transition-property: background-color, transform;
-}
-a:hover,
-button:hover {
-  @apply scale-105 duration-300 bg-black/5 dark:bg-white/10;
-  transition-property: background-color, transform;
-}
-
 /*h1 ~ h4*/
 h1 {
   @apply text-[24px];
@@ -43,9 +31,9 @@ h4 {
   @apply opacity-0;
 }
 
-/*박스 css*/
+/*박스*/
 .box {
-  @apply w-full h-[160px] p-[20px] flex justify-start border rounded-2xl;
+  @apply w-full h-full min-h-[160px] p-[20px] flex justify-start border rounded-2xl;
 }
 .icon-box {
   @apply w-[40px] h-[40px] mb-[10px] flex items-center justify-center border rounded-lg;
@@ -68,19 +56,66 @@ h4 {
   @apply px-[10px] py-[4px] border rounded-md;
 }
 
-/* list-page */
-.list-article {
-  @apply mb-[80px];
+/* 화면별 스타일 */
+@screen pc-large {
+  /* 레이아웃 */
+  .list-page-layout {
+    @apply grid grid-cols-4 grid-rows-[160px] gap-[40px];
+  }
+  .list-page-layout > li {
+    @apply min-h-[160px];
+  }
+
+  /* 회전효과 */
+  .rotate-r:hover {
+    @apply rotate-2 duration-200;
+  }
+  .rotate-r {
+    @apply duration-200;
+  }
+  .rotate-l:hover {
+    @apply -rotate-2 duration-200;
+  }
+  .rotate-l {
+    @apply duration-200;
+  }
 }
-.list-article > h3 {
-  @apply mb-[20px];
+@screen pc {
+  /* 레이아웃 */
+  .list-page-layout {
+    @apply grid grid-cols-3 grid-rows-[160px] gap-[40px];
+  }
+  .list-page-layout > li {
+    @apply min-h-[160px];
+  }
+
+  /* 회전효과 */
+  .rotate-r:hover {
+    @apply rotate-2 duration-200;
+  }
+  .rotate-r {
+    @apply duration-200;
+  }
+  .rotate-l:hover {
+    @apply -rotate-2 duration-200;
+  }
+  .rotate-l {
+    @apply duration-200;
+  }
 }
-.list-article > div {
-  @apply mb-[20px] flex justify-between items-center;
+@screen tablet {
+  .list-page-layout {
+    @apply grid grid-cols-3 grid-rows-[160px] gap-[20px];
+  }
+  .list-page-layout > li {
+    @apply min-h-[160px];
+  }
 }
-.list-article > div > a {
-  @apply text-black/40 dark:text-white/40;
-}
-.list-article > div > a:hover {
-  @apply bg-transparent transform-none;
+@screen mobile {
+  .list-page-layout {
+    @apply grid grid-cols-2 grid-rows-[160px] gap-[20px];
+  }
+  .list-page-layout > li {
+    @apply min-h-[160px];
+  }
 }

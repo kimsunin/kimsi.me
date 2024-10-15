@@ -1,0 +1,47 @@
+@screen pc-large {
+  .dev {
+    @apply col-span-2;
+  }
+  .engin {
+    @apply col-span-2 row-span-2;
+  }
+  .note {
+    @apply col-span-2;
+  }
+}
+
+@screen pc {
+  .dev {
+    @apply col-span-2;
+  }
+  .engin {
+    @apply col-span-1 row-span-2;
+  }
+  .note {
+    @apply col-span-2;
+  }
+}
+
+@screen tablet {
+  .dev {
+    @apply col-span-2;
+  }
+  .engin {
+    @apply col-span-1 row-span-2;
+  }
+  .note {
+    @apply col-span-2;
+  }
+}
+
+@screen mobile {
+  .dev {
+    @apply col-span-2;
+  }
+  .engin {
+    @apply col-span-2;
+  }
+  .note {
+    @apply col-span-2;
+  }
+}
