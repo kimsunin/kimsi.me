@@ -12,7 +12,11 @@ import "./MainPage.css";
 function MainPage() {
   return (
     <ul className={"list-page-layout"}>
-      <li className={"github pc:hover:rotate-1 pc-large:rotate-1 duration-200"}>
+      <li
+        className={
+          "github pc:hover:rotate-1 pc-large:hover:rotate-1 duration-200"
+        }
+      >
         <GithubLinkBox />
       </li>
       <li className={"surf-img img"}>
