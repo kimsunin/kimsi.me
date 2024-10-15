@@ -9,18 +9,20 @@ import {
   RocketIc,
   DevelopIc,
   PencilIc,
+  HomeIc,
 } from "svg/index";
 
 const iconMap: Record<string, React.ElementType> = {
   blog: BlogIc,
   gmail: MailIc,
   nonghaeng: NongHaengIc,
-  bookShare: BookIc,
+  book: BookIc,
   bmw: BmwIc,
   blog_v1: RocketIc,
   craft: CraftIc,
   dev: DevelopIc,
   note: PencilIc,
+  home: HomeIc,
 };
 
 type PropsType = {

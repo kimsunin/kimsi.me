@@ -18,6 +18,7 @@ import RocketIc from "./rocket.svg";
 import CraftIc from "./craft.svg";
 import DevelopIc from "./develop.svg";
 import PencilIc from "./pencil.svg";
+import HomeIc from "./home.svg";
 
 export {
   ErrorImgIc,
@@ -40,4 +41,5 @@ export {
   CraftIc,
   DevelopIc,
   PencilIc,
+  HomeIc,
 };

@@ -1,0 +1,47 @@
+@screen pc-large {
+  .nonghaeng {
+    @apply col-span-2;
+  }
+  .blog {
+    @apply col-span-2;
+  }
+  .book {
+    @apply col-span-2;
+  }
+  .bmw {
+    @apply col-span-2;
+  }
+}
+
+@screen pc {
+  .nonghaeng {
+    @apply col-span-2;
+  }
+  .blog {
+    @apply col-span-1 row-span-2;
+  }
+  .book {
+    @apply col-span-1;
+  }
+  .bmw {
+    @apply col-span-1;
+  }
+}
+
+@screen tablet {
+  .nonghaeng {
+    @apply col-span-2;
+  }
+  .blog {
+    @apply col-span-1 row-span-2;
+  }
+  .book {
+    @apply col-span-1;
+  }
+  .bmw {
+    @apply col-span-1;
+  }
+}
+
+@screen mobile {
+}

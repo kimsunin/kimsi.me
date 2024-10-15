@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { Header } from "@/component/index";
 
 export const metadata: Metadata = {
-  title: "kimsi.me | blog",
-  description: "두번째 기술 블로그",
+  title: "kimsi.me | craft",
+  description: "손으로 직접 만들다",
 };
 
 export default function CraftLayout({
@@ -13,7 +13,7 @@ export default function CraftLayout({
 }>) {
   return (
     <main>
-      <Header type="blog" title="Blog" />
+      <Header title="Craft" />
       {children}
     </main>
   );

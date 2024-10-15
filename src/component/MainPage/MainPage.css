@@ -1,7 +1,4 @@
 @screen pc-large {
-  h4 {
-    @apply col-span-4;
-  }
   .img * {
     @apply w-full h-full rounded-2xl;
   }
@@ -17,29 +14,27 @@
   .blog {
     @apply col-span-2;
   }
+  .craft {
+    @apply col-span-1;
+  }
   .sound {
     @apply col-span-1;
   }
   .anxiety-img {
     @apply col-span-2 row-span-2 rounded-2xl;
   }
-
   .gmail {
     @apply col-span-1;
   }
   .memo {
     @apply col-span-full;
   }
-
   .map {
     @apply col-span-2 row-span-2;
   }
 }
 
 @screen pc {
-  h4 {
-    @apply col-span-3;
-  }
   .img * {
     @apply w-full h-full  rounded-2xl;
   }
@@ -50,9 +45,12 @@
     @apply col-span-1 row-span-2;
   }
   .theme {
-    @apply col-span-2;
+    @apply col-span-1;
   }
   .blog {
+    @apply col-span-2;
+  }
+  .craft {
     @apply col-span-2;
   }
   .sound {
@@ -74,9 +72,6 @@
 }
 
 @screen tablet {
-  h4 {
-    @apply col-span-3;
-  }
   .img * {
     @apply w-full h-full  rounded-2xl;
   }
@@ -87,9 +82,12 @@
     @apply col-span-1 row-span-2;
   }
   .theme {
-    @apply col-span-2;
+    @apply col-span-1;
   }
   .blog {
+    @apply col-span-2;
+  }
+  .craft {
     @apply col-span-2;
   }
   .sound {
@@ -110,9 +108,6 @@
 }
 
 @screen mobile {
-  h4 {
-    @apply col-span-2;
-  }
   .img * {
     @apply w-full h-full rounded-2xl;
   }
@@ -122,7 +117,6 @@
   .surf-img {
     @apply col-span-1 row-span-2;
   }
-
   .anxiety-img {
     @apply col-span-2 row-span-2  rounded-2xl;
   }

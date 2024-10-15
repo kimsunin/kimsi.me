@@ -22,8 +22,13 @@ function MainPage() {
       <li className={"surf-img img"}>
         <CustomImage src={"/img/surf.jpg"} />
       </li>
-      <li className={"theme rotate-r"}>
-        <ThemeSwitchBox />
+      <li className="craft rotate-r">
+        <LinkBox
+          href="/craft"
+          title="Craft"
+          type="home"
+          subtitle="/craft"
+        ></LinkBox>
       </li>
       <li className={"blog rotate-l"}>
         <LinkBox
@@ -39,8 +44,14 @@ function MainPage() {
       <li className={"anxiety-img img"}>
         <CustomImage src={"/gif/insideout-anxiety.gif"} />
       </li>
+      <li className={"theme rotate-r"}>
+        <ThemeSwitchBox />
+      </li>
       <li className={"sound rotate-r"}>
         <SoundSwitchBox />
+      </li>
+      <li className="map rotate-r">
+        <MapBox />
       </li>
       <li className={"gmail rotate-l"}>
         <LinkBox
@@ -50,47 +61,6 @@ function MainPage() {
           subtitle={"suninkim10 @gmail.com"}
         />
       </li>
-      <li className="map rotate-r">
-        <MapBox />
-      </li>
-      <h4>CRAFTS 🛠️</h4>
-      <li className={"craft-item rotate-l"}>
-        <LinkBox
-          type={"nonghaeng"}
-          href={"https://nonghaeng.site"}
-          title={"농행동행"}
-          subtitle={"농촌관광 플랫폼"}
-          target={"_blank"}
-        />
-      </li>
-      <li className="craft-item rotate-l">
-        <LinkBox
-          type="blog_v1"
-          href="https://blog.kimsi.me"
-          title="Blog_v1"
-          subtitle="첫번째 기술 블로그"
-          target={"_blank"}
-        />
-      </li>
-      <li className={"craft-item rotate-r"}>
-        <LinkBox
-          type={"bookShare"}
-          href={"https://book.kimsi.me"}
-          title={"Book-Share"}
-          subtitle={"도서대출 웹 서비스"}
-          target={"_blank"}
-        />
-      </li>
-      <li className={"craft-item rotate-l"}>
-        <LinkBox
-          type={"bmw"}
-          href={"https://bmw.kimsi.me"}
-          title={"Bmw"}
-          subtitle={"canvas 자동차 게임"}
-          target={"_blank"}
-        />
-      </li>
-      <h4>STACKS 💻</h4>
     </ul>
   );
 }

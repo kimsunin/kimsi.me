@@ -7,11 +7,11 @@ import { blogCategoryModel, craftCategoryModel } from "@/model/index";
 import { CategoryIc } from "svg/index";
 
 type PropsType = {
-  href: string;
+  type?: string;
   title: string;
 };
 
-function Header({ href, title }: PropsType) {
+function Header({ type, title }: PropsType) {
   const pathName = usePathname();
   const [isClick, setIsClick] = React.useState(false);
 
@@ -44,19 +44,23 @@ function Header({ href, title }: PropsType) {
   return (
     <div className={"header"}>
       <div>
-        <Link href={href}>{title}</Link>
-        <button
-          onClick={() => {
-            setIsClick(!isClick);
-          }}
-        >
-          <CategoryIc />
-        </button>
+        <h1>{title}</h1>
+        {type && (
+          <button
+            onClick={() => {
+              setIsClick(!isClick);
+            }}
+          >
+            <CategoryIc />
+          </button>
+        )}
       </div>
-      <ul className={isClick ? "category-on" : "category-off"}>
-        {pathName.startsWith("/blog") && blogCategoryList}
-        {pathName.startsWith("/craft") && craftCategoryList}
-      </ul>
+      {type && (
+        <ul className={isClick ? "category-on" : "category-off"}>
+          {type == "blog" && blogCategoryList}
+          {type == "craf" && craftCategoryList}
+        </ul>
+      )}
     </div>
   );
 }

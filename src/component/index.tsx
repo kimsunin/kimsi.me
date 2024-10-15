@@ -15,7 +15,6 @@ import MemoBox from "./Box/MemoBox/Memobox";
 import MainPage from "./MainPage/MainPage";
 import BlogComment from "./Blog/BlogComment/BlogComment";
 import MapBox from "./Box/MapBox/MapBox";
-import BlogListPage from "./Blog/BlogListPage/BlogListPage";
 
 export {
   Kimsunin,
@@ -35,5 +34,4 @@ export {
   MainPage,
   BlogComment,
   MapBox,
-  BlogListPage,
 };
