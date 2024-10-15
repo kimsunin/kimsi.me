@@ -21,7 +21,7 @@ function ThemeSwitchBox() {
         </div>
         <div className={"text-box"}>
           <p>{resolvedTheme == "light" ? "Light" : "Dark"}</p>
-          <p>switch theme mode</p>
+          <p>switch theme</p>
         </div>
       </div>
     </button>

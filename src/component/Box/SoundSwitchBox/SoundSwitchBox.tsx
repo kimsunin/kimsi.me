@@ -23,7 +23,7 @@ function SoundSwitchBox() {
         </div>
         <div className={"text-box"}>
           <p>{sound ? "On" : "Off"}</p>
-          <p>switch sound mode</p>
+          <p>switch sound</p>
         </div>
       </div>
     </button>

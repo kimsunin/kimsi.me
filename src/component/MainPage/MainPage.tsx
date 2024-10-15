@@ -59,7 +59,7 @@ function MainPage() {
           type={"nonghaeng"}
           href={"https://nonghaeng.site"}
           title={"농행동행"}
-          subtitle={"농촌관광 서비스 농행동행"}
+          subtitle={"농촌관광 플랫폼"}
           target={"_blank"}
         />
       </li>
@@ -68,7 +68,7 @@ function MainPage() {
           type="blog_v1"
           href="https://blog.kimsi.me"
           title="Blog_v1"
-          subtitle="김선인의 첫번째 기술 블로그"
+          subtitle="첫번째 기술 블로그"
           target={"_blank"}
         />
       </li>
@@ -86,7 +86,7 @@ function MainPage() {
           type={"bmw"}
           href={"https://bmw.kimsi.me"}
           title={"Bmw"}
-          subtitle={"canvas태그를 이용한 자동차 게임"}
+          subtitle={"canvas 자동차 게임"}
           target={"_blank"}
         />
       </li>

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import dayjs from "dayjs";
 import Calendar from "react-github-contribution-calendar";
-import "./GithubLinkBox.css";
 import { GithubIc } from "svg/index";
 
 function GithubLinkBox() {
@@ -56,15 +55,18 @@ function GithubLinkBox() {
     <Link
       href={"https://github.com/kimsunin"}
       target={"_blank"}
-      className={"github-link-box"}
+      className={"box gap-[20px]"}
     >
       <div>
         <div className={"icon-box"}>
           <GithubIc />
         </div>
-        <span>GitHub</span>
+        <div className="text-box">
+          <p>GitHub</p>
+          <p>kimsunin</p>
+        </div>
       </div>
-      <div>
+      <div className="w-full">
         <Calendar
           values={data}
           until={dayjs().format("YYYY-MM-DD")}
