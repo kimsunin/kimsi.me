@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 import {
   ThemeProvider,
@@ -32,6 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${pretendard.variable}`}>
       <body className={pretendard.className}>
+        {/* 카카오맵 */}
+        <Script
+          type="text/javascript"
+          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=83545697a7ab39d76d740660c9541aa8&libraries=services&autoload=false"
+          strategy="beforeInteractive"
+        />
         <ThemeProvider>
           <SoundProvider>
             <DialogProvider>
