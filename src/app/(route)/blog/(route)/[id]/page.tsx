@@ -24,7 +24,6 @@ function Page({ params }: { params: { id: string } }) {
       setTitle("「 note 」 - 제약없이 자유로운 기록");
     }
     getData(params.id).then(async (res: BlogType) => {
-      console.log(res);
       if (res.status == 200) {
         setData(res.data);
         setVisible(true);

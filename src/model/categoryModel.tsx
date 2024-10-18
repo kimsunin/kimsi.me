@@ -1,4 +1,5 @@
 const blogCategoryModel = [
+  { title: "home", subTitle: "블로그 홈", href: "/blog" },
   { title: "develop", subTitle: "개발에 관한 기록", href: "/blog/dev" },
   {
     title: "engineering",

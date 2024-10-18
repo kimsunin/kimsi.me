@@ -1,123 +1,135 @@
 @screen pc-large {
-  .blog-list {
-    @apply w-full grid grid-cols-2 grid-rows-[360px] gap-[40px];
+  .list-item {
+    @apply col-span-2 row-span-2 h-[280px];
   }
-  .blog-list > li > a {
-    @apply w-full h-full border p-0 block rounded-2xl;
+  .list-item > a {
+    @apply w-full h-full border p-[20px] block rounded-2xl;
   }
 
   /* 이미지 영역 */
-  .blog-list > li > a > div:nth-child(1) {
-    @apply w-full h-[220px] rounded-t-2xl;
+  .list-item > a > div:nth-child(1) {
+    @apply w-full flex gap-[20px] mb-[20px];
   }
-  .blog-list > li > a > div:nth-child(1) * {
-    @apply rounded-t-2xl;
+  .list-item > a > div:nth-child(1) > div {
+    @apply w-[140px] h-[140px] rounded-lg border flex-shrink-0;
+  }
+  .list-item > a > div:nth-child(1) > div > * {
+    @apply rounded-lg;
   }
 
   /* 설명 영역 */
-  .blog-list > li > a > div:nth-child(2) {
-    @apply h-[140px] p-[10px] border-t relative;
+  .list-item > a > div:nth-child(2) {
+    @apply relative h-[80px];
   }
-  .blog-list > li > a > div:nth-child(2) > p {
-    @apply mr-[10px] absolute top-[60px] left-[10px] overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
+  .list-item > a > div:nth-child(2) > p {
+    @apply absolute overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Limit to 3 lines */
     -webkit-box-orient: vertical;
   }
-  .blog-list > li > a > div:nth-child(2) > span {
-    @apply absolute right-[10px] bottom-[10px] text-[14px] text-black/40 dark:text-white/40;
+  .list-item > a > div:nth-child(2) > span {
+    @apply absolute bottom-0 text-[14px] text-black/40 dark:text-white/40;
   }
 }
 
 @screen pc {
-  .blog-list {
-    @apply w-full grid grid-cols-2 grid-rows-[320px] gap-[40px];
+  .list-item {
+    @apply col-span-3 row-span-2 h-[280px];
   }
-  .blog-list > li > a {
-    @apply w-full h-full border p-0 block rounded-2xl;
+  .list-item > a {
+    @apply w-full h-full border p-[20px] block rounded-2xl;
   }
 
   /* 이미지 영역 */
-  .blog-list > li > a > div:nth-child(1) {
-    @apply w-full h-[180px] rounded-t-2xl;
+  .list-item > a > div:nth-child(1) {
+    @apply flex gap-[20px] mb-[20px];
   }
-  .blog-list > li > a > div:nth-child(1) > * {
-    @apply rounded-t-2xl;
+  .list-item > a > div:nth-child(1) > div {
+    @apply w-[140px] h-[140px] rounded-lg border flex-shrink-0;
+  }
+  .list-item > a > div:nth-child(1) > div * {
+    @apply rounded-lg;
   }
 
   /* 설명 영역 */
-  .blog-list > li > a > div:nth-child(2) {
-    @apply h-[140px] p-[10px] border-t relative;
+  .list-item > a > div:nth-child(2) {
+    @apply relative h-[80px];
   }
-  .blog-list > li > a > div:nth-child(2) > p {
-    @apply mr-[10px] absolute top-[60px] left-[10px] overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
+  .list-item > a > div:nth-child(2) > p {
+    @apply absolute overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
     -webkit-box-orient: vertical;
   }
-  .blog-list > li > a > div:nth-child(2) > span {
-    @apply absolute right-[10px] bottom-[10px] text-[14px] text-black/40 dark:text-white/40;
+  .list-item > a > div:nth-child(2) > span {
+    @apply absolute bottom-0 text-[14px] text-black/40 dark:text-white/40;
   }
 }
 
 @screen tablet {
-  .blog-list {
-    @apply w-full grid grid-cols-2 grid-rows-[320px] gap-[20px];
+  .list-item {
+    @apply col-span-3 row-span-2 h-[280px];
   }
-  .blog-list > li > a {
-    @apply w-full h-full border p-0 block rounded-2xl;
+  .list-item > a {
+    @apply w-full h-full border p-[20px] block rounded-2xl;
   }
 
   /* 이미지 영역 */
-  .blog-list > li > a > div:nth-child(1) {
-    @apply w-full h-[180px] rounded-t-2xl;
+  .list-item > a > div:nth-child(1) {
+    @apply flex gap-[20px] mb-[20px];
   }
-  .blog-list > li > a > div:nth-child(1) > * {
-    @apply rounded-t-2xl;
+  .list-item > a > div:nth-child(1) > div {
+    @apply w-[140px] h-[140px] rounded-lg border flex-shrink-0;
+  }
+  .list-item > a > div:nth-child(1) > div * {
+    @apply rounded-lg;
   }
 
   /* 설명 영역 */
-  .blog-list > li > a > div:nth-child(2) {
-    @apply h-[140px] p-[10px] border-t relative;
+  .list-item > a > div:nth-child(2) {
+    @apply relative h-[80px];
   }
-  .blog-list > li > a > div:nth-child(2) > p {
-    @apply mr-[10px] absolute top-[60px] left-[10px] overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
+  .list-item > a > div:nth-child(2) > p {
+    @apply absolute overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
     -webkit-box-orient: vertical;
   }
-  .blog-list > li > a > div:nth-child(2) > span {
-    @apply absolute right-[10px] bottom-[10px] text-[14px] text-black/40 dark:text-white/40;
+  .list-item > a > div:nth-child(2) > span {
+    @apply absolute bottom-0 text-[14px] text-black/40 dark:text-white/40;
   }
 }
 
 @screen mobile {
-  .blog-list {
-    @apply w-full grid grid-cols-1 grid-rows-[360px] gap-[20px];
+  .list-item {
+    @apply col-span-2 row-span-2 h-[280px];
   }
-  .blog-list > li > a {
-    @apply w-full h-full border p-0 block rounded-2xl;
+  .list-item > a {
+    @apply w-full h-full border p-[20px] block rounded-2xl;
   }
 
   /* 이미지 영역 */
-  .blog-list > li > a > div:nth-child(1) {
-    @apply w-full h-[220px] rounded-t-2xl;
+  .list-item > a > div:nth-child(1) {
+    @apply flex gap-[20px] mb-[20px];
   }
-  .blog-list > li > a > div:nth-child(1) > * {
-    @apply rounded-t-2xl;
+  .list-item > a > div:nth-child(1) > div {
+    @apply w-[140px] h-[140px] rounded-lg border flex-shrink-0;
+  }
+  .list-item > a > div:nth-child(1) > div * {
+    @apply rounded-lg;
   }
 
   /* 설명 영역 */
-  .blog-list > li > a > div:nth-child(2) {
-    @apply h-[140px] p-[10px] border-t relative;
+  .list-item > a > div:nth-child(2) {
+    @apply relative h-[80px];
   }
-  .blog-list > li > a > div:nth-child(2) > p {
-    @apply mr-[10px] absolute top-[60px] left-[10px] overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
+  .list-item > a > div:nth-child(2) > p {
+    @apply absolute overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
     -webkit-box-orient: vertical;
   }
-  .blog-list > li > a > div:nth-child(2) > span {
-    @apply absolute right-[10px] bottom-[10px] text-[14px] text-black/40 dark:text-white/40;
+  .list-item > a > div:nth-child(2) > span {
+    @apply absolute bottom-0 text-[14px] text-black/40 dark:text-white/40;
   }
 }
