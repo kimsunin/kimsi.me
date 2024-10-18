@@ -20,7 +20,7 @@ function MainPage() {
         <GithubLinkBox />
       </li>
       <li className={"surf-img img"}>
-        <CustomImage src={"/img/surf.jpg"} />
+        <CustomImage src={"/img/surf.png"} />
       </li>
       <li className="craft rotate-r">
         <LinkBox
