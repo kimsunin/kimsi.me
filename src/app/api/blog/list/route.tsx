@@ -1,8 +1,10 @@
 import { supabase } from "@/util/supabase";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { BlogContentGroupListType } from "@/type/BlogType";
 
-export async function GET() {
+export async function GET(req: NextRequest) {
+  console.log(await req.json());
+
   const datas: BlogContentGroupListType = { dev: [], engin: [], note: [] };
 
   const getDevData = async () => {

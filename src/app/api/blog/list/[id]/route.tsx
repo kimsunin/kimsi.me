@@ -5,6 +5,8 @@ export async function GET(
   req: NextRequest,
   { params }: { params: { id: string } }
 ) {
+  console.log(await req.json());
+
   const { data, error } = await supabase
     .from(params.id)
     .select("id,title,sub_title,date,img_url")
