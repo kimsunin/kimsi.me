@@ -10,6 +10,7 @@ import {
   DevelopIc,
   PencilIc,
   HomeIc,
+  BrushIc,
 } from "svg/index";
 
 const iconMap: Record<string, React.ElementType> = {
@@ -23,6 +24,7 @@ const iconMap: Record<string, React.ElementType> = {
   dev: DevelopIc,
   note: PencilIc,
   home: HomeIc,
+  edit: BrushIc,
 };
 
 type PropsType = {

@@ -32,6 +32,9 @@
   .map {
     @apply col-span-2 row-span-2;
   }
+  .edit {
+    @apply col-span-1;
+  }
 }
 
 @screen pc {
@@ -69,6 +72,9 @@
   .map {
     @apply col-span-3 row-span-1 h-[160px];
   }
+  .edit {
+    @apply col-span-2;
+  }
 }
 
 @screen tablet {
@@ -104,6 +110,9 @@
   }
   .map {
     @apply col-span-3 row-span-1 h-[160px];
+  }
+  .edit {
+    @apply col-span-2;
   }
 }
 

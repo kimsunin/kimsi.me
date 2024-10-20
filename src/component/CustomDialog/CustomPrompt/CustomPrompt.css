@@ -1,5 +1,5 @@
 .custom-prompt {
-  @apply p-[10px] rounded-md relative bg-white/60 dark:bg-white/20;
+  @apply p-[20px] rounded-2xl relative bg-white/60 dark:bg-white/20;
 }
 .custom-prompt > span {
   @apply block;

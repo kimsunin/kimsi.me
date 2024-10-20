@@ -61,6 +61,14 @@ function MainPage() {
           subtitle={"suninkim10 @gmail.com"}
         />
       </li>
+      <li className="edit rotate-l">
+        <LinkBox
+          type="edit"
+          href="/edit"
+          title="Edit"
+          subtitle="김선인의 작업공간"
+        />
+      </li>
     </ul>
   );
 }

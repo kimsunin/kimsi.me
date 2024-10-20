@@ -15,6 +15,7 @@ import MemoBox from "./Box/MemoBox/Memobox";
 import MainPage from "./MainPage/MainPage";
 import BlogComment from "./Blog/BlogComment/BlogComment";
 import MapBox from "./Box/MapBox/MapBox";
+import MarkDownEditor from "./MarkDownEditor/MarkDownEditor";
 
 export {
   Kimsunin,
@@ -34,4 +35,5 @@ export {
   MainPage,
   BlogComment,
   MapBox,
+  MarkDownEditor,
 };

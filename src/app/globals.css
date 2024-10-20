@@ -9,6 +9,10 @@ body * {
   @apply border-black/10 dark:border-white/20;
 }
 
+input {
+  @apply px-[10px] outline-none rounded-lg border;
+}
+
 /*h1 ~ h4*/
 h1 {
   @apply text-[24px];

@@ -19,6 +19,7 @@ import CraftIc from "./craft.svg";
 import DevelopIc from "./develop.svg";
 import PencilIc from "./pencil.svg";
 import HomeIc from "./home.svg";
+import BrushIc from "./brush.svg";
 
 export {
   ErrorImgIc,
@@ -42,4 +43,5 @@ export {
   DevelopIc,
   PencilIc,
   HomeIc,
+  BrushIc,
 };

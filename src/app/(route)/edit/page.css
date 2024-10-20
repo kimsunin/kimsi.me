@@ -1,0 +1,10 @@
+.edit-page > div:nth-child(1) > * {
+  @apply block mb-[10px];
+}
+.edit-page > div:nth-child(3) {
+  @apply flex justify-between;
+}
+
+.edit-page > div:nth-child(1) > select {
+  @apply cursor-pointer outline-none;
+}

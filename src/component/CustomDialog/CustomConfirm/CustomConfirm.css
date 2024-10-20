@@ -1,5 +1,5 @@
 .custom-confirm {
-  @apply p-[10px] rounded-2xl relative bg-white/60 dark:bg-white/20;
+  @apply p-[20px] rounded-2xl relative bg-white/60 dark:bg-white/20;
 }
 .custom-confirm > div {
   @apply mt-[10px] flex justify-between;
