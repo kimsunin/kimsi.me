@@ -5,7 +5,7 @@ export async function GET(
   req: NextRequest,
   { params }: { params: { slug: string[] } }
 ) {
-  console.log(await req.json());
+  console.log(req.json());
 
   const { data, error } = await supabase
     .from(params.slug[0])
