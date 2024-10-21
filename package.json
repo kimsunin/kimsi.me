@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.45.4",
+    "@supabase/supabase-js": "^2.45.6",
     "@uiw/react-md-editor": "^4.0.4",
     "file-loader": "^6.2.0",
     "next": "14.2.15",
