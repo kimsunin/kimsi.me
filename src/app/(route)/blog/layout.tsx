@@ -7,14 +7,14 @@ export const metadata: Metadata = {
 };
 
 export default function CraftLayout({
-  children,
-}: Readonly<{
+                                      children
+                                    }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <main>
-      <Header type="blog" title="Blog" />
-      {children}
-    </main>
+      <main>
+        <Header type="blog" title="Blog"/>
+        {children}
+      </main>
   );
-}
+};
