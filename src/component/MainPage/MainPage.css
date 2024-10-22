@@ -1,6 +1,6 @@
 @screen pc-large {
-  .img * {
-    @apply w-full h-full rounded-2xl;
+  .img > * {
+    @apply rounded-2xl border;
   }
   .github {
     @apply col-span-3;
@@ -38,8 +38,8 @@
 }
 
 @screen pc {
-  .img * {
-    @apply w-full h-full  rounded-2xl;
+  .img > * {
+    @apply rounded-2xl border;
   }
   .github {
     @apply col-span-full row-span-1;
@@ -78,8 +78,8 @@
 }
 
 @screen tablet {
-  .img * {
-    @apply w-full h-full  rounded-2xl;
+  .img > * {
+    @apply rounded-2xl border;
   }
   .github {
     @apply col-span-full row-span-1;
@@ -117,8 +117,8 @@
 }
 
 @screen mobile {
-  .img * {
-    @apply w-full h-full rounded-2xl;
+  .img > * {
+    @apply rounded-2xl border;
   }
   .github {
     @apply col-span-full;

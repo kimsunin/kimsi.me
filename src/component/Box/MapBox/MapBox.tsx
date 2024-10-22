@@ -9,8 +9,8 @@ function MapBox() {
       className="rounded-2xl relative"
     >
       <Map
+        className="w-full h-full rounded-2xl border"
         center={{ lat: 36.37024018391257, lng: 127.34599754699049 }}
-        style={{ width: "100%", height: "100%", borderRadius: "1rem" }}
         draggable={false}
         zoomable={false}
         level={7}
@@ -20,7 +20,7 @@ function MapBox() {
           position={{ lat: 36.37024018391257, lng: 127.34599754699049 }}
         />
       </Map>
-      <div className="absolute px-[10px] py-[4px] bg-white/90 dark:bg-black/90 rounded-lg left-[20px] bottom-[20px] z-10">
+      <div className="absolute px-[10px] text-[14px] py-[4px] bg-white/90 dark:bg-black/90 rounded-lg border left-[20px] bottom-[20px] z-10">
         🏠 cnu, daejeon
       </div>
     </Link>
