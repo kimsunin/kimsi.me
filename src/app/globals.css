@@ -29,7 +29,7 @@ h4 {
 
 /*custom visible, invisible*/
 .is-visible {
-  @apply opacity-100 duration-1000;
+  @apply opacity-100 duration-1000 transition-opacity;
 }
 .is-invisible {
   @apply opacity-0;
@@ -72,16 +72,16 @@ h4 {
 
   /* 회전효과 */
   .rotate-r:hover {
-    @apply rotate-2 duration-200;
+    @apply rotate-2 duration-200 transition-rotate;
   }
   .rotate-r {
-    @apply duration-200;
+    @apply duration-200 transition-rotate;
   }
   .rotate-l:hover {
-    @apply -rotate-2 duration-200;
+    @apply -rotate-2 duration-200 transition-rotate;
   }
   .rotate-l {
-    @apply duration-200;
+    @apply duration-200 transition-rotate;
   }
 }
 @screen pc {

@@ -14,7 +14,7 @@ function MainPage() {
     <ul className={"list-page-layout"}>
       <li
         className={
-          "github pc:hover:rotate-1 pc-large:hover:rotate-1 duration-200"
+          "github pc:hover:rotate-1 pc-large:hover:rotate-1 duration-200 transition-rotate"
         }
       >
         <GithubLinkBox />
