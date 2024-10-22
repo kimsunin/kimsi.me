@@ -72,16 +72,16 @@ h4 {
 
   /* 회전효과 */
   .rotate-r:hover {
-    @apply rotate-2 duration-200 transition-rotate;
+    @apply rotate-2 duration-200 transition-transform;
   }
   .rotate-r {
-    @apply duration-200 transition-rotate;
+    @apply duration-200 transition-transform;
   }
   .rotate-l:hover {
-    @apply -rotate-2 duration-200 transition-rotate;
+    @apply -rotate-2 duration-200 transition-transform;
   }
   .rotate-l {
-    @apply duration-200 transition-rotate;
+    @apply duration-200 transition-transform;
   }
 }
 @screen pc {

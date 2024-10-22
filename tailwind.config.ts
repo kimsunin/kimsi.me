@@ -13,7 +13,7 @@ const config: Config = {
         w: "width",
         h: "height",
         bg: "background-color",
-        rotate: "rotate",
+        transform: "transform",
         opacity: "opacity",
       },
       screens: {
