@@ -9,7 +9,7 @@ export async function GET(
 
   let { data, error } = await supabase
     .from(params.slug[0])
-    .select("title, content")
+    .select("title, sub_title, content")
     // Filters
     .eq("id", params.slug[1])
     .single();
@@ -55,7 +55,11 @@ export async function POST(
   const request = await req.json();
   const { data, error } = await supabase
     .from(params.slug[0])
-    .update({ title: request.title, content: request.content })
+    .update({
+      title: request.title,
+      sub_title: request.subTitle,
+      content: request.content,
+    })
     .eq("id", params.slug[1])
     .select();
   if (data) {

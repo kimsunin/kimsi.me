@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { BlogComment, BlogContentTitle, MarkDownView } from "@/component";
 import { useDialog } from "@/hook/useDialog";
 import { BlogContenDetailType, BlogType } from "@/type/BlogType";
+import Link from "next/link";
 
 function Page({ params }: { params: { slug: string[] } }) {
   const { alert } = useDialog();
@@ -31,6 +32,7 @@ function Page({ params }: { params: { slug: string[] } }) {
         <BlogContentTitle title={data?.title} date={data?.date} />
         <MarkDownView post={data?.content} />
         <BlogComment />
+        <Link href={`/edit/${params.slug[0]}/${params.slug[1]}`}>edit</Link>
       </article>
     </section>
   );
