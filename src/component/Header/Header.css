@@ -8,7 +8,7 @@
   @apply text-[36px] font-[500];
 }
 .header > div > button {
-  @apply w-[40px] h-[40px] flex justify-center items-center rounded-lg border;
+  @apply w-[40px] h-[40px] flex justify-center items-center rounded-lg border shadow-sm;
 }
 
 /* 카테고리 리스트 */

@@ -1,15 +1,13 @@
+// provider
+import SoundProvider from "./_Provider/SoundProvider/SoundProvider";
+import ThemeProvider from "./_Provider/ThemeProvider/ThemeProvider";
+import DialogProvider from "./_Provider/DialogProvider/DialogProvider";
+
+export { SoundProvider, ThemeProvider, DialogProvider };
+
+// layout
 import DashboardLayout from "./DashboardLayout/DashboardLayout";
-import DialogProvider from "./DialogProvider/DialogProvider";
 import MainLayout from "./MainLayout/MainLayout";
 import Overlay from "./Overlay/Overlay";
-import SoundProvider from "./SoundProvider/SoundProvider";
-import ThemeProvider from "./ThemeProvider/ThemeProvider";
 
-export {
-  DashboardLayout,
-  DialogProvider,
-  MainLayout,
-  Overlay,
-  SoundProvider,
-  ThemeProvider,
-};
+export { DashboardLayout, MainLayout, Overlay };

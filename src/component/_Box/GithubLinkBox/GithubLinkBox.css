@@ -1,0 +1,7 @@
+.github-link-box {
+  @apply flex justify-between gap-[20px];
+}
+
+.github-link-box > div:nth-child(2) {
+  @apply w-full h-full;
+}

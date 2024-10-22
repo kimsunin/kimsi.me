@@ -39,7 +39,7 @@ function Page() {
     let ok = false;
     while (!ok) {
       await prompt("비밀번호").then(async (res) => {
-        if (res !== null) {
+        if (res !== undefined) {
           if (res == process.env.NEXT_PUBLIC_PASSWORD) {
             const res = await fetch(
               process.env.NEXT_PUBLIC_API_URL + "blog/edit",

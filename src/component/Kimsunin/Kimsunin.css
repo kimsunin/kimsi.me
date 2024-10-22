@@ -9,7 +9,7 @@
   @apply flex justify-center;
 }
 .kimsunin > div > div > a {
-  @apply w-[200px] h-[200px] flex justify-center items-end border-[2px] rounded-full overflow-hidden duration-300;
+  @apply w-[200px] h-[200px] flex justify-center items-end border-[2px] rounded-full overflow-hidden duration-300 shadow-inner;
 }
 .kimsunin > div > div > a:hover {
   @apply border-[blue]/40 bg-[blue]/10 duration-300;

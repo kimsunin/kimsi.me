@@ -1,0 +1,139 @@
+@screen pc-large {
+  .img > * {
+    @apply rounded-2xl border shadow-sm;
+  }
+  .github {
+    @apply col-span-3;
+  }
+  .surf-img {
+    @apply col-span-1 row-span-2;
+  }
+  .theme {
+    @apply col-span-1;
+  }
+  .blog {
+    @apply col-span-2;
+  }
+  .craft {
+    @apply col-span-1;
+  }
+  .sound {
+    @apply col-span-1;
+  }
+  .anxiety-img {
+    @apply col-span-2 row-span-2;
+  }
+  .gmail {
+    @apply col-span-1;
+  }
+  .memo {
+    @apply col-span-full;
+  }
+  .map {
+    @apply col-span-2 row-span-2;
+  }
+  .edit {
+    @apply col-span-1;
+  }
+}
+
+@screen pc {
+  .img > * {
+    @apply rounded-2xl border shadow-sm;
+  }
+  .github {
+    @apply col-span-full row-span-1;
+  }
+  .surf-img {
+    @apply col-span-1 row-span-2;
+  }
+  .theme {
+    @apply col-span-1;
+  }
+  .blog {
+    @apply col-span-2;
+  }
+  .craft {
+    @apply col-span-2;
+  }
+  .sound {
+    @apply col-span-1;
+  }
+  .anxiety-img {
+    @apply col-span-2 row-span-2 rounded-2xl;
+  }
+
+  .gmail {
+    @apply col-span-1;
+  }
+  .memo {
+    @apply col-span-full;
+  }
+  .map {
+    @apply col-span-3 row-span-1 h-[160px];
+  }
+  .edit {
+    @apply col-span-2;
+  }
+}
+
+@screen tablet {
+  .img > * {
+    @apply rounded-2xl border shadow-sm;
+  }
+  .github {
+    @apply col-span-full row-span-1;
+  }
+  .surf-img {
+    @apply col-span-1 row-span-2;
+  }
+  .theme {
+    @apply col-span-1;
+  }
+  .blog {
+    @apply col-span-2;
+  }
+  .craft {
+    @apply col-span-2;
+  }
+  .sound {
+    @apply col-span-1;
+  }
+  .anxiety-img {
+    @apply col-span-2 row-span-2 rounded-2xl;
+  }
+  .gmail {
+    @apply col-span-1;
+  }
+  .memo {
+    @apply col-span-full;
+  }
+  .map {
+    @apply col-span-3 row-span-1 h-[160px];
+  }
+  .edit {
+    @apply col-span-2;
+  }
+}
+
+@screen mobile {
+  .img > * {
+    @apply rounded-2xl border shadow-sm;
+  }
+  .github {
+    @apply col-span-full;
+  }
+  .surf-img {
+    @apply col-span-1 row-span-2;
+  }
+  .anxiety-img {
+    @apply col-span-2 row-span-2  rounded-2xl;
+  }
+  .memo {
+    @apply col-span-full;
+  }
+
+  .map {
+    @apply col-span-2 row-span-1 h-[160px];
+  }
+}

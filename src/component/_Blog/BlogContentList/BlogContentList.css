@@ -1,0 +1,135 @@
+@screen pc-large {
+  .list-item {
+    @apply col-span-2 row-span-2 h-[280px];
+  }
+  .list-item > a {
+    @apply w-full h-full border p-[20px] block rounded-2xl shadow-sm;
+  }
+
+  /* 이미지 영역 */
+  .list-item > a > div:nth-child(1) {
+    @apply w-full flex gap-[20px] mb-[20px];
+  }
+  .list-item > a > div:nth-child(1) > div {
+    @apply w-[140px] h-[140px] rounded-lg border flex-shrink-0;
+  }
+  .list-item > a > div:nth-child(1) > div > * {
+    @apply rounded-lg;
+  }
+
+  /* 설명 영역 */
+  .list-item > a > div:nth-child(2) {
+    @apply relative h-[80px];
+  }
+  .list-item > a > div:nth-child(2) > p {
+    @apply absolute overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  .list-item > a > div:nth-child(2) > span {
+    @apply absolute bottom-0 text-[14px] text-black/40 dark:text-white/40;
+  }
+}
+
+@screen pc {
+  .list-item {
+    @apply col-span-3 row-span-2 h-[280px];
+  }
+  .list-item > a {
+    @apply w-full h-full border p-[20px] block rounded-2xl shadow-sm;
+  }
+
+  /* 이미지 영역 */
+  .list-item > a > div:nth-child(1) {
+    @apply flex gap-[20px] mb-[20px];
+  }
+  .list-item > a > div:nth-child(1) > div {
+    @apply w-[140px] h-[140px] rounded-lg border flex-shrink-0;
+  }
+  .list-item > a > div:nth-child(1) > div * {
+    @apply rounded-lg;
+  }
+
+  /* 설명 영역 */
+  .list-item > a > div:nth-child(2) {
+    @apply relative h-[80px];
+  }
+  .list-item > a > div:nth-child(2) > p {
+    @apply absolute overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  .list-item > a > div:nth-child(2) > span {
+    @apply absolute bottom-0 text-[14px] text-black/40 dark:text-white/40;
+  }
+}
+
+@screen tablet {
+  .list-item {
+    @apply col-span-3 row-span-2 h-[280px];
+  }
+  .list-item > a {
+    @apply w-full h-full border p-[20px] block rounded-2xl shadow-sm;
+  }
+
+  /* 이미지 영역 */
+  .list-item > a > div:nth-child(1) {
+    @apply flex gap-[20px] mb-[20px];
+  }
+  .list-item > a > div:nth-child(1) > div {
+    @apply w-[140px] h-[140px] rounded-lg border flex-shrink-0;
+  }
+  .list-item > a > div:nth-child(1) > div * {
+    @apply rounded-lg;
+  }
+
+  /* 설명 영역 */
+  .list-item > a > div:nth-child(2) {
+    @apply relative h-[80px];
+  }
+  .list-item > a > div:nth-child(2) > p {
+    @apply absolute overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  .list-item > a > div:nth-child(2) > span {
+    @apply absolute bottom-0 text-[14px] text-black/40 dark:text-white/40;
+  }
+}
+
+@screen mobile {
+  .list-item {
+    @apply col-span-2 row-span-2 h-[280px];
+  }
+  .list-item > a {
+    @apply w-full h-full border p-[20px] block rounded-2xl shadow-sm;
+  }
+
+  /* 이미지 영역 */
+  .list-item > a > div:nth-child(1) {
+    @apply flex gap-[20px] mb-[20px];
+  }
+  .list-item > a > div:nth-child(1) > div {
+    @apply w-[140px] h-[140px] rounded-lg border flex-shrink-0;
+  }
+  .list-item > a > div:nth-child(1) > div * {
+    @apply rounded-lg;
+  }
+
+  /* 설명 영역 */
+  .list-item > a > div:nth-child(2) {
+    @apply relative h-[80px];
+  }
+  .list-item > a > div:nth-child(2) > p {
+    @apply absolute overflow-hidden text-ellipsis text-black/60 dark:text-white/40;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  .list-item > a > div:nth-child(2) > span {
+    @apply absolute bottom-0 text-[14px] text-black/40 dark:text-white/40;
+  }
+}

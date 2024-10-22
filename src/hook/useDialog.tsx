@@ -3,7 +3,7 @@ import { createContext, useContext } from "react";
 type Type = {
   alert: (message?: string) => Promise<boolean>;
   confirm: (message?: string) => Promise<boolean>;
-  prompt: (message?: string) => Promise<string | null>;
+  prompt: (message?: string) => Promise<string | undefined>;
 };
 
 const DialogContext = createContext<Type>({
