@@ -1,4 +1,7 @@
 @screen pc-large {
+  .memo {
+    @apply col-span-full;
+  }
   .nonghaeng {
     @apply col-span-2;
   }
@@ -14,6 +17,9 @@
 }
 
 @screen pc {
+  .memo {
+    @apply col-span-full;
+  }
   .nonghaeng {
     @apply col-span-2;
   }
@@ -29,6 +35,9 @@
 }
 
 @screen tablet {
+  .memo {
+    @apply col-span-full;
+  }
   .nonghaeng {
     @apply col-span-2;
   }
@@ -44,4 +53,7 @@
 }
 
 @screen mobile {
+  .memo {
+    @apply col-span-full;
+  }
 }

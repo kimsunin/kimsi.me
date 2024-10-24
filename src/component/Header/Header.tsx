@@ -19,7 +19,9 @@ function Header({ type, title }: PropsType) {
     <li key={index}>
       <Link
         href={item.href}
-        className={pathName == item.href ? "is-located" : ""}
+        className={
+          pathName.split("/")[2] == item.href.split("/")[2] ? "is-located" : ""
+        }
       >
         {item.title}
         {" - "}
@@ -32,7 +34,9 @@ function Header({ type, title }: PropsType) {
     <li key={index}>
       <Link
         href={item.href}
-        className={pathName == item.href ? "is-located" : ""}
+        className={
+          pathName.split("/")[2] == item.href.split("/")[2] ? "is-located" : ""
+        }
       >
         {item.title}
         {" - "}

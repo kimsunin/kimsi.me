@@ -26,7 +26,13 @@ export async function POST(req: NextRequest) {
     } else if (request.type && request.title && request.content) {
       const { data, error } = await supabase
         .from(request.type)
-        .insert([{ title: request.title, content: request.content }])
+        .insert([
+          {
+            title: request.title,
+            sub_title: request.subTitle,
+            content: request.content,
+          },
+        ])
         .select();
 
       if (data) {
