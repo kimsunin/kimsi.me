@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useDialog } from "@/hook/useDialog";
 import { useRouter } from "next/navigation";
 import {
@@ -9,12 +10,8 @@ import {
   MarkDownView,
   MemoBox,
 } from "@/component";
-import {
-  BlogContenDetailType,
-  BlogContentListType,
-  BlogType,
-} from "@/type/BlogType";
-import Link from "next/link";
+import { BlogContenDetailType, BlogContentListType } from "@/type/BlogType";
+import { ResType } from "@/type/ResType";
 
 function Page({ params }: { params: { slug: string[] } }) {
   const { alert } = useDialog();
@@ -36,19 +33,21 @@ function Page({ params }: { params: { slug: string[] } }) {
       setTitle("「 note 」 - 제약없이 자유로운 기록");
     }
     if (!params.slug[1]) {
-      getListData(params.slug[0]).then(async (res: BlogType) => {
-        if (res.status == 200) {
-          setListData(res.data);
-          setVisible(true);
-        } else {
-          await alert(res.message).then(() => {
-            router.back();
-          });
+      getListData(params.slug[0]).then(
+        async (res: ResType<BlogContentListType>) => {
+          if (res.status == 200) {
+            setListData(res.data);
+            setVisible(true);
+          } else {
+            await alert(res.message).then(() => {
+              router.back();
+            });
+          }
         }
-      });
+      );
     } else {
       getDetailData(params.slug[0], params.slug[1]).then(
-        async (res: BlogType) => {
+        async (res: ResType<BlogContenDetailType>) => {
           if (res.status == 200) {
             setDetailData(res.data);
             setVisible(true);

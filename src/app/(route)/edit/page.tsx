@@ -5,6 +5,8 @@ import { useDialog } from "@/hook/useDialog";
 import { MarkDownEditor } from "@/component";
 import { useChange } from "@/hook/useChange";
 import "./page.css";
+import { BlogEditType } from "@/type/BlogType";
+import { ResType } from "@/type/ResType";
 
 function Page() {
   const router = useRouter();
@@ -12,13 +14,8 @@ function Page() {
   const { alert, prompt } = useDialog();
 
   const [visible, setVisible] = React.useState(false);
-  const [editItem, setEditItem] = React.useState<{
-    type: string;
-    title: string;
-    subTitle: string;
-    content: string | undefined;
-  }>({
-    type: localStorage.getItem("type") || "note",
+  const [editItem, setEditItem] = React.useState<BlogEditType>({
+    type: localStorage.getItem("type") || "dev",
     title: localStorage.getItem("title") || "",
     subTitle: localStorage.getItem("subTitle") || "",
     content: localStorage.getItem("content") || "",
@@ -41,26 +38,19 @@ function Page() {
       await prompt("비밀번호").then(async (res) => {
         if (res !== undefined) {
           if (res == process.env.NEXT_PUBLIC_PASSWORD) {
-            const res = await fetch(
-              process.env.NEXT_PUBLIC_API_URL + "blog/edit",
-              {
-                method: "post",
-                body: JSON.stringify(editItem),
-                cache: "no-store",
+            await creatBlog(editItem).then(async (res: ResType<any[]>) => {
+              if (res.status == 200) {
+                alert(res.message).then(() => {
+                  localStorage.removeItem("type");
+                  localStorage.removeItem("title");
+                  localStorage.removeItem("content");
+                  router.push(`blog/${editItem.type}/${res.data[0].id}`);
+                });
+              } else {
+                alert(res.message);
               }
-            );
-            const data = await res.json();
-            if (data.status == 200) {
-              alert(data.message).then(() => {
-                localStorage.removeItem("type");
-                localStorage.removeItem("title");
-                localStorage.removeItem("content");
-                router.push(`blog/detail/${editItem.type}/${data.data[0].id}`);
-              });
-            } else {
-              alert(data.message);
-            }
-            ok = true;
+              ok = true;
+            });
           } else {
             await alert("비밀번호 오류");
           }
@@ -72,7 +62,9 @@ function Page() {
   };
 
   React.useEffect(() => {
-    localStorage.setItem("type", editItem.type);
+    if (editItem.type) {
+      localStorage.setItem("type", editItem.type);
+    }
     if (editItem.title || editItem.title == "") {
       localStorage.setItem("title", editItem.title);
     }
@@ -114,5 +106,14 @@ function Page() {
     </section>
   );
 }
+
+const creatBlog = async (editItem: BlogEditType) => {
+  const res = await fetch(process.env.NEXT_PUBLIC_API_URL + "blog/edit", {
+    method: "post",
+    body: JSON.stringify(editItem),
+    cache: "no-store",
+  });
+  return await res.json();
+};
 
 export default Page;

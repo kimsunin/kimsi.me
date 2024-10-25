@@ -5,6 +5,8 @@ import { MarkDownEditor } from "@/component/index";
 import { useChange } from "@/hook/useChange";
 import { useDialog } from "@/hook/useDialog";
 import "../page.css";
+import { BlogEditType, BlogType } from "@/type/BlogType";
+import { ResType } from "@/type/ResType";
 
 function Page({ params }: { params: { slug: string[] } }) {
   const router = useRouter();
@@ -13,11 +15,7 @@ function Page({ params }: { params: { slug: string[] } }) {
 
   const [visible, setVisible] = useState(false);
 
-  const [editItem, setEditItem] = useState<{
-    title: string;
-    subTitle: string;
-    content: string | undefined;
-  }>({
+  const [editItem, setEditItem] = useState<BlogEditType>({
     title: "",
     subTitle: "",
     content: "",
@@ -33,26 +31,24 @@ function Page({ params }: { params: { slug: string[] } }) {
     [editItem]
   );
 
-  const deleteItem = async () => {
+  const onSubmitUpdate = async () => {
     let ok = false;
     while (!ok) {
       await prompt("비밀번호").then(async (res) => {
         if (res !== undefined) {
           if (res == process.env.NEXT_PUBLIC_PASSWORD) {
-            const res = await fetch(
-              process.env.NEXT_PUBLIC_API_URL +
-                `edit/${params.slug[0]}/${params.slug[1]}`,
-              { method: "delete" }
+            await updateBlog(params.slug[0], params.slug[1], editItem).then(
+              async (res: ResType<any>) => {
+                if (res.status == 200) {
+                  await alert(res.message).then(() => {
+                    router.replace(`/blog/${params.slug[0]}/${params.slug[1]}`);
+                  });
+                } else {
+                  await alert(res.message);
+                }
+                ok = true;
+              }
             );
-            const data = await res.json();
-            if (data.staus == 200) {
-              await alert(data.message).then(() => {
-                router.replace(`/${params.slug[0]}`);
-              });
-            } else {
-              await alert(data.message);
-            }
-            ok = true;
           } else {
             await alert("비밀번호 오류");
           }
@@ -63,26 +59,24 @@ function Page({ params }: { params: { slug: string[] } }) {
     }
   };
 
-  const updateItem = async () => {
+  const onSubmitDelete = async () => {
     let ok = false;
     while (!ok) {
       await prompt("비밀번호").then(async (res) => {
         if (res !== undefined) {
           if (res == process.env.NEXT_PUBLIC_PASSWORD) {
-            const res = await fetch(
-              process.env.NEXT_PUBLIC_API_URL +
-                `edit/${params.slug[0]}/${params.slug[1]}`,
-              { method: "post", body: JSON.stringify(editItem) }
+            await deleteBlog(params.slug[0], params.slug[1]).then(
+              async (res: ResType<any>) => {
+                if (res.status == 200) {
+                  await alert(res.message).then(() => {
+                    router.replace(`/blog/${params.slug[0]}`);
+                  });
+                } else {
+                  await alert(res.message);
+                }
+                ok = true;
+              }
             );
-            const data = await res.json();
-            if (data.staus == 200) {
-              await alert(data.message).then(() => {
-                router.replace(`/${params.slug[0]}`);
-              });
-            } else {
-              await alert(data.message);
-            }
-            ok = true;
           } else {
             await alert("비밀번호 오류");
           }
@@ -94,7 +88,7 @@ function Page({ params }: { params: { slug: string[] } }) {
   };
 
   useEffect(() => {
-    getData(params.slug[0], params.slug[1]).then((res) => {
+    getData(params.slug[0], params.slug[1]).then((res: ResType<BlogType>) => {
       if (res?.status == 200) {
         setVisible(true);
         setEditItem({
@@ -127,9 +121,9 @@ function Page({ params }: { params: { slug: string[] } }) {
         <div>
           <button onClick={() => router.back()}>취소</button>
           <div>
-            <button onClick={deleteItem}>삭제</button>
+            <button onClick={onSubmitDelete}>삭제</button>
             {" / "}
-            <button onClick={updateItem}>수정</button>
+            <button onClick={onSubmitUpdate}>수정</button>
           </div>
         </div>
       </article>
@@ -141,6 +135,22 @@ const getData = async (type: string, id: string) => {
   const res = await fetch(
     process.env.NEXT_PUBLIC_API_URL + `blog/edit/${type}/${id}`,
     { method: "get", cache: "no-store" }
+  );
+  return await res.json();
+};
+
+const updateBlog = async (type: string, id: string, editItem: BlogEditType) => {
+  const res = await fetch(
+    process.env.NEXT_PUBLIC_API_URL + `blog/edit/${type}/${id}`,
+    { method: "post", body: JSON.stringify(editItem) }
+  );
+  return await res.json();
+};
+
+const deleteBlog = async (type: string, id: string) => {
+  const res = await fetch(
+    process.env.NEXT_PUBLIC_API_URL + `blog/edit/${type}/${id}`,
+    { method: "delete" }
   );
   return await res.json();
 };

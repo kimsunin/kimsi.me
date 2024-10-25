@@ -1,7 +1,8 @@
 export type BlogType = {
-  data: any;
-  message: string;
-  status: number;
+  title: string;
+  sub_title: string;
+  content: string;
+  date: string;
 };
 
 export type BlogContentListType = {
@@ -22,4 +23,11 @@ export type BlogContenDetailType = {
   title: string;
   content: string;
   date: string;
+};
+
+export type BlogEditType = {
+  type?: string;
+  title: string;
+  subTitle: string;
+  content: string | undefined;
 };
