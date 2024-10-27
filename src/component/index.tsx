@@ -1,3 +1,7 @@
+import Scripts from "./Scripts/Scripts";
+
+export { Scripts };
+
 // customdialog
 import CustomAlert from "./_Dialog/CustomAlert/CustomAlert";
 import CustomConfirm from "./_Dialog/CustomConfirm/CustomConfirm";
