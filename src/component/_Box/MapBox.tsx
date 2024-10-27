@@ -21,7 +21,7 @@ function MapBox() {
         />
       </Map>
       <div className="absolute px-[10px] text-[14px] py-[4px] bg-white/90 dark:bg-black/90 rounded-lg border left-[20px] bottom-[20px] z-10">
-        🏠 cnu, daejeon
+        🏫 cnu, daejeon
       </div>
     </Link>
   );
