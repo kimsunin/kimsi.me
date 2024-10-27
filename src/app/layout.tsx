@@ -51,6 +51,7 @@ export default function RootLayout({
 		`,
           }}
         />
+
         {/* 카카오맵 */}
         <Script
           type="text/javascript"
