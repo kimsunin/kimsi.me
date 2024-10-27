@@ -13,12 +13,12 @@ import BlogComment from "./_Blog/BlogComment/BlogComment";
 export { BlogContentList, BlogContentTitle, BlogComment };
 
 // box
-import LinkBox from "./_Box/LinkBox/LinkBox";
-import GithubLinkBox from "./_Box/GithubLinkBox/GithubLinkBox";
-import ThemeSwitchBox from "./_Box/ThemeSwitchBox/ThemeSwitchBox";
-import SoundSwitchBox from "./_Box/SoundSwitchBox/SoundSwitchBox";
-import MemoBox from "./_Box/MemoBox/Memobox";
-import MapBox from "./_Box/MapBox/MapBox";
+import LinkBox from "./_Box/LinkBox";
+import GithubLinkBox from "./_Box/GithubLinkBox";
+import ThemeSwitchBox from "./_Box/ThemeSwitchBox";
+import SoundSwitchBox from "./_Box/SoundSwitchBox";
+import MemoBox from "./_Box/Memobox";
+import MapBox from "./_Box/MapBox";
 
 export {
   LinkBox,
