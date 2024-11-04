@@ -18,9 +18,9 @@ export async function GET(
   const mdBlocks = await n2m.pageToMarkdown(`${params.id}`);
 
   const data: BlogContenDetailType = {
-    title: recordMap.properties.Name.title[0]?.text.content,
+    title: recordMap.properties.title.title[0]?.text.content,
     content: n2m.toMarkdownString(mdBlocks).parent,
-    date: recordMap.properties.Created_Date.created_time.slice(0, 10),
+    date: recordMap.properties.created_date.created_time.slice(0, 10),
   };
 
   if (data) {
