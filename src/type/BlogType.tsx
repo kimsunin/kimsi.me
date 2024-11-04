@@ -6,7 +6,7 @@ export type BlogType = {
 };
 
 export type BlogContentListType = {
-  id: number;
+  id: string;
   title: string;
   sub_title: string | null;
   date: string;

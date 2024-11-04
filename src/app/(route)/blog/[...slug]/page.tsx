@@ -46,7 +46,7 @@ function Page({ params }: { params: { slug: string[] } }) {
         }
       );
     } else {
-      getDetailData(params.slug[0], params.slug[1]).then(
+      getDetailData(params.slug[1]).then(
         async (res: ResType<BlogContenDetailType>) => {
           if (res.status == 200) {
             setDetailData(res.data);
@@ -97,9 +97,9 @@ const getListData = async (id: string) => {
   return await res.json();
 };
 
-const getDetailData = async (type: string, id: string) => {
+const getDetailData = async (id: string) => {
   const res = await fetch(
-    process.env.NEXT_PUBLIC_API_URL + `blog/detail/${type}/${id}`,
+    process.env.NEXT_PUBLIC_API_URL + `blog/detail/${id}`,
     { cache: "no-store" }
   );
   return await res.json();
