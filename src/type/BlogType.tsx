@@ -21,7 +21,7 @@ export type BlogContentGroupListType = {
 
 export type BlogContenDetailType = {
   title: string;
-  content: string;
+  content: any;
   date: string;
 };
 

@@ -13,8 +13,9 @@ export { CustomAlert, CustomConfirm, CustomPrompt };
 import BlogContentList from "./_Blog/BlogContentList/BlogContentList";
 import BlogContentTitle from "./_Blog/BlogContentTitle/BlogContentTitle";
 import BlogComment from "./_Blog/BlogComment/BlogComment";
+import Renderer from "./_Blog/Renderer/Renderer";
 
-export { BlogContentList, BlogContentTitle, BlogComment };
+export { BlogContentList, BlogContentTitle, BlogComment, Renderer };
 
 // box
 import LinkBox from "./_Box/LinkBox";
