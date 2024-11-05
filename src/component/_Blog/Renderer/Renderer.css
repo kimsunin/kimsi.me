@@ -1,0 +1,21 @@
+.renderer {
+  @apply text-black/80 dark:text-white/60;
+}
+
+.renderer pre {
+  @apply rounded-md;
+}
+
+.renderer img {
+  @apply w-full object-cover rounded-md;
+}
+
+.notion-code-copy-button {
+  @apply w-[30px] h-[30px] text-white/60 bg-[#2d2d2d] p-[6px] flex items-center justify-center shadow-none border-white/20;
+}
+.notion-code-copy-button:hover {
+  @apply w-[30px] h-[30px] text-white/60 bg-[#2d2d2d] p-[6px] flex items-center justify-center shadow-none border-white/20;
+}
+.notion-code-copy-tooltip {
+  @apply text-[12px];
+}

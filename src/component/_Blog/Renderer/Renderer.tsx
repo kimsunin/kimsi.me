@@ -7,6 +7,7 @@ import { NotionComponents } from "react-notion-x";
 import { NotionRenderer } from "react-notion-x";
 import "react-notion-x/src/styles.css";
 import "prismjs/themes/prism-tomorrow.css";
+import "./Renderer.css";
 
 const Code = dynamic(() =>
   import("react-notion-x/build/third-party/code").then(async (m) => {
@@ -62,7 +63,13 @@ function Renderer({ post }: PropsType) {
     []
   );
 
-  return <NotionRenderer recordMap={post} components={components} />;
+  return (
+    <NotionRenderer
+      className="renderer"
+      recordMap={post}
+      components={components}
+    />
+  );
 }
 
 export default Renderer;
