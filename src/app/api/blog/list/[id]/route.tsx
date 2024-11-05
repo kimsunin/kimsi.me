@@ -38,9 +38,9 @@ export async function GET(
     });
   }
 
-  if (results) {
+  if (data) {
     return NextResponse.json({
-      data: results,
+      data: data,
       message: "success",
       status: 200,
     });

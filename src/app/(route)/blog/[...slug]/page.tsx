@@ -35,7 +35,6 @@ function Page({ params }: { params: { slug: string[] } }) {
     if (!params.slug[1]) {
       getListData(params.slug[0]).then(
         async (res: ResType<BlogContentListType>) => {
-          console.log(res);
           if (res.status == 200) {
             setListData(res.data);
             setVisible(true);
@@ -49,7 +48,6 @@ function Page({ params }: { params: { slug: string[] } }) {
     } else {
       getDetailData(params.slug[1]).then(
         async (res: ResType<BlogContenDetailType>) => {
-          console.log(res);
           if (res.status == 200) {
             setDetailData(res.data);
             setVisible(true);
