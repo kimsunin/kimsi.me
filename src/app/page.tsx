@@ -68,9 +68,6 @@ export default function Home() {
                 subtitle={"suninkim10 @gmail.com"}
               />
             </li>
-            <li className="edit rotate-l">
-              <LinkBox type="edit" href="/edit" title="Edit" subtitle="/edit" />
-            </li>
           </ul>
         </article>
       </section>

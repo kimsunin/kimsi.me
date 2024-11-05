@@ -7,7 +7,7 @@ import { NotionComponents } from "react-notion-x";
 import { NotionRenderer } from "react-notion-x";
 import "react-notion-x/src/styles.css";
 import "prismjs/themes/prism-tomorrow.css";
-import "./Renderer.css";
+import "./BlogRenderer.css";
 
 const Code = dynamic(() =>
   import("react-notion-x/build/third-party/code").then(async (m) => {
@@ -57,19 +57,13 @@ type PropsType = {
   post: any;
 };
 
-function Renderer({ post }: PropsType) {
+function BlogRenderer({ post }: PropsType) {
   const components: Partial<NotionComponents> = useMemo(
     () => ({ Code, nextImage: Image, nextLink: Link, Collection }),
     []
   );
 
-  return (
-    <NotionRenderer
-      className="renderer"
-      recordMap={post}
-      components={components}
-    />
-  );
+  return <NotionRenderer recordMap={post} components={components} />;
 }
 
-export default Renderer;
+export default BlogRenderer;

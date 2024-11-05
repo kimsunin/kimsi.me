@@ -13,9 +13,9 @@ export { CustomAlert, CustomConfirm, CustomPrompt };
 import BlogContentList from "./_Blog/BlogContentList/BlogContentList";
 import BlogContentTitle from "./_Blog/BlogContentTitle/BlogContentTitle";
 import BlogComment from "./_Blog/BlogComment/BlogComment";
-import Renderer from "./_Blog/Renderer/Renderer";
+import BlogRenderer from "./_Blog/BlogRenderer/BlogRenderer";
 
-export { BlogContentList, BlogContentTitle, BlogComment, Renderer };
+export { BlogContentList, BlogContentTitle, BlogComment, BlogRenderer };
 
 // box
 import LinkBox from "./_Box/LinkBox";
@@ -33,12 +33,6 @@ export {
   MemoBox,
   MapBox,
 };
-
-// MarkDown
-import MarkDownView from "./_MarkDown/MarkDownView/MarkDownView";
-import MarkDownEditor from "./_MarkDown/MarkDownEditor/MarkDownEditor";
-
-export { MarkDownEditor, MarkDownView };
 
 // remain
 import Kimsunin from "./Kimsunin/Kimsunin";

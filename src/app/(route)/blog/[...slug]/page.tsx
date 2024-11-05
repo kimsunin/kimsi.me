@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import { useDialog } from "@/hook/useDialog";
 import { useRouter } from "next/navigation";
 import {
@@ -8,7 +7,7 @@ import {
   BlogContentList,
   BlogContentTitle,
   MemoBox,
-  Renderer,
+  BlogRenderer,
 } from "@/component";
 import { BlogContenDetailType, BlogContentListType } from "@/type/BlogType";
 import { ResType } from "@/type/ResType";
@@ -83,9 +82,8 @@ function Page({ params }: { params: { slug: string[] } }) {
       <section className={visible ? "is-visible" : "is-invisible"}>
         <article>
           <BlogContentTitle title={detailData?.title} date={detailData?.date} />
-          <Renderer post={detailData?.content} />
+          <BlogRenderer post={detailData?.content} />
           <BlogComment />
-          <Link href={`/edit/${params.slug[0]}/${params.slug[1]}`}>edit</Link>
         </article>
       </section>
     );

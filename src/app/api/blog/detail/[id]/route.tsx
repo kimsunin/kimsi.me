@@ -1,14 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import notion from "@/util/notion";
-import { NotionToMarkdown } from "notion-to-md";
 import { BlogContenDetailType } from "@/type/BlogType";
 import { NotionAPI } from "notion-client";
 
 const notionApi = new NotionAPI();
-
-const n2m = new NotionToMarkdown({
-  notionClient: notion,
-});
 
 export async function GET(
   req: NextRequest,
