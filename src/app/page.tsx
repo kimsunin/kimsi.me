@@ -8,13 +8,24 @@ import {
   ThemeSwitchBox,
   SoundSwitchBox,
   MapBox,
+  GaBox,
 } from "@/component";
+import { getAnalytics } from "@/util/google";
+import { GaDataType } from "@/type/GaType";
 import "./page.css";
 
 export default function Home() {
   const [visible, setVisible] = React.useState(false);
+  const [gaData, setGaData] = React.useState<GaDataType>({
+    list: [],
+    percent: 0,
+    total: 0,
+  });
 
   React.useEffect(() => {
+    getGaData().then((res: GaDataType) => {
+      setGaData(res);
+    });
     setVisible(true);
   }, []);
 
@@ -68,9 +79,17 @@ export default function Home() {
                 subtitle={"suninkim10 @gmail.com"}
               />
             </li>
+            <li className="ga">
+              <GaBox data={gaData} />
+            </li>
           </ul>
         </article>
       </section>
     </main>
   );
 }
+
+const getGaData = async () => {
+  let res = await getAnalytics();
+  return res;
+};

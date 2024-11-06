@@ -32,6 +32,9 @@
   .map {
     @apply col-span-2 row-span-2;
   }
+  .ga {
+    @apply col-span-2 row-span-2;
+  }
 }
 
 @screen pc {
@@ -69,6 +72,9 @@
   .map {
     @apply col-span-3 row-span-1 h-[160px];
   }
+  .ga {
+    @apply col-span-2 row-span-2;
+  }
 }
 
 @screen tablet {
@@ -105,6 +111,9 @@
   .map {
     @apply col-span-3 row-span-1 h-[160px];
   }
+  .ga {
+    @apply col-span-2 row-span-2;
+  }
 }
 
 @screen mobile {
@@ -126,5 +135,8 @@
 
   .map {
     @apply col-span-2 row-span-1 h-[160px];
+  }
+  .ga {
+    @apply col-span-full row-span-2;
   }
 }

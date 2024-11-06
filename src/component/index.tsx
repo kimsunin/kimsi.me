@@ -24,6 +24,7 @@ import ThemeSwitchBox from "./_Box/ThemeSwitchBox";
 import SoundSwitchBox from "./_Box/SoundSwitchBox";
 import MemoBox from "./_Box/Memobox";
 import MapBox from "./_Box/MapBox";
+import GaBox from "./_Box/GaBox";
 
 export {
   LinkBox,
@@ -32,6 +33,7 @@ export {
   SoundSwitchBox,
   MemoBox,
   MapBox,
+  GaBox,
 };
 
 // remain
