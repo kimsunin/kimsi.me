@@ -15,7 +15,7 @@ export async function getAnalytics() {
     },
   });
   const request: google.analytics.data.v1beta.IRunReportRequest = {
-    property: `properties${process.env.GOOLE_ANALYTICS_REQUEST_PROPERTY}`,
+    property: `properties/${process.env.GOOLE_ANALYTICS_REQUEST_PROPERTY}`,
     orderBys: [{ dimension: { orderType: "NUMERIC", dimensionName: "date" } }],
     dimensions: [{ name: "date" }],
     metrics: [{ name: "screenPageViews" }],
