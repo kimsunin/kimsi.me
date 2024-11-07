@@ -38,7 +38,7 @@ export async function GET(
     });
   }
 
-  if (data) {
+  if (data.length > 0) {
     return NextResponse.json({
       data: data,
       message: "success",

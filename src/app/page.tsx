@@ -34,7 +34,7 @@ export default function Home() {
       <section className={visible ? "is-visible" : "is-invisible"}>
         <article>
           <ul className={"list-page-layout"}>
-            <li className={"github pc:hover:rotate-1 rotate-r"}>
+            <li className={"github rotate-r"}>
               <GithubLinkBox />
             </li>
             <li className={"surf-img img"}>

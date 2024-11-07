@@ -1,3 +1,7 @@
-import { blogCategoryModel, craftCategoryModel } from "./categoryModel";
+import { blogCategoryModel, blogTitleMap } from "./blogModel";
 
-export { blogCategoryModel, craftCategoryModel };
+export { blogCategoryModel, blogTitleMap };
+
+import { craftCategoryModel } from "./craftModel";
+
+export { craftCategoryModel };

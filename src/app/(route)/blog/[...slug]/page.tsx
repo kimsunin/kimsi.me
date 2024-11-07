@@ -9,6 +9,7 @@ import {
   MemoBox,
   BlogRenderer,
 } from "@/component";
+import { blogTitleMap } from "@/model";
 import { BlogContenDetailType, BlogContentListType } from "@/type/BlogType";
 import { ResType } from "@/type/ResType";
 
@@ -22,15 +23,7 @@ function Page({ params }: { params: { slug: string[] } }) {
   const [title, setTitle] = React.useState("");
 
   React.useEffect(() => {
-    if (params.slug[0] == "dev") {
-      setTitle("「 develop 」 - 개발에 관한 기록");
-    }
-    if (params.slug[0] == "engin") {
-      setTitle("「 engineering 」 - 공학에 관한 기록");
-    }
-    if (params.slug[0] == "note") {
-      setTitle("「 note 」 - 제약없이 자유로운 기록");
-    }
+    setTitle(blogTitleMap[params.slug[0]]);
     if (!params.slug[1]) {
       getListData(params.slug[0]).then(
         async (res: ResType<BlogContentListType>) => {

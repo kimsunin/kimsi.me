@@ -12,4 +12,10 @@ const blogCategoryModel = [
   },
 ];
 
-export { blogCategoryModel };
+const blogTitleMap: any = {
+  dev: "「 develop 」 - 개발에 관한 기록",
+  engin: "「 engineering 」 - 공학에 관한 기록",
+  note: "「 note 」 - 제약없이 자유로운 기록",
+};
+
+export { blogCategoryModel, blogTitleMap };
