@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { MemoBox, LinkBox } from "@/component";
+import { WidgetMemo, WidgetLink } from "@/component";
 import "./page.css";
 
 function Page() {
@@ -15,30 +15,33 @@ function Page() {
       <article>
         <ul className="list-page-layout">
           <li className="memo">
-            <MemoBox text="김선인의 두번째 블로그 입니다" />
+            <WidgetMemo text="김선인의 두번째 블로그 입니다" />
           </li>
           <li className="dev rotate-r">
-            <LinkBox
+            <WidgetLink
               type="dev"
               href="/blog/dev"
               title="develop"
               subtitle="개발에 관한 기록"
+              iconBoxStyle="icon-box"
             />
           </li>
           <li className="engin rotate-l">
-            <LinkBox
+            <WidgetLink
               type="craft"
               href="/blog/engin"
               title="engineering"
               subtitle="공학에 관한 기록"
+              iconBoxStyle="icon-box"
             />
           </li>
           <li className="note rotate-r">
-            <LinkBox
+            <WidgetLink
               type="note"
               href="/blog/note"
               title="note"
               subtitle="제약없이 자유로운 기록"
+              iconBoxStyle="icon-box"
             />
           </li>
         </ul>
