@@ -5,7 +5,7 @@ type PropsType = {
   data: GaDataType;
 };
 
-export default function GaBox({ data }: PropsType) {
+function WidgetGa({ data }: PropsType) {
   return (
     <Card className="w-full rounded-2xl">
       <Text>총 방문자 수</Text>
@@ -39,3 +39,5 @@ export default function GaBox({ data }: PropsType) {
     </Card>
   );
 }
+
+export default WidgetGa;

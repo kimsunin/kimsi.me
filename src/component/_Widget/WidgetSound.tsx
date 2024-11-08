@@ -3,7 +3,7 @@ import { useSound } from "@/hook/useSound";
 import { SoundOnSound } from "sound/index";
 import { SoundOnIc, SoundOffIc } from "svg/index";
 
-function SoundSwitchBox() {
+function WidgetSound() {
   const { sound, setSound } = useSound();
 
   const soundObj = new Audio(SoundOnSound);
@@ -30,4 +30,4 @@ function SoundSwitchBox() {
   );
 }
 
-export default SoundSwitchBox;
+export default WidgetSound;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
-function MapBox() {
+function WidgetMap() {
   return (
     <Link
       href="https://m.map.kakao.com/actions/searchView?q=%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90&wxEnc=LVSOTP&wyEnc=QNLTTMN&lvl=4"
@@ -27,4 +27,4 @@ function MapBox() {
   );
 }
 
-export default MapBox;
+export default WidgetMap;

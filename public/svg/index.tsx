@@ -1,13 +1,12 @@
 import ErrorImgIc from "./error-img.svg";
 import KimsuninIc from "./kimsunin.svg";
-import GithubIc from "./github.svg";
+
 import SunIc from "./sun.svg";
 import MoonIc from "./moon.svg";
 import NotFoundImgIc from "./not-found-img.svg";
 import SoundOnIc from "./sound-on.svg";
 import SoundOffIc from "./sound-off.svg";
 import BlogIc from "./blog.svg";
-import MailIc from "./mail.svg";
 import NongHaengIc from "./nonghaeng.svg";
 import BookIc from "./book.svg";
 import BmwIc from "./bmw.svg";
@@ -21,17 +20,21 @@ import PencilIc from "./pencil.svg";
 import HomeIc from "./home.svg";
 import BrushIc from "./brush.svg";
 
+import WidgetGithubIc from "./widget-github.svg";
+import WidgetMailIc from "./widget-mail.svg";
+import WidgetInstagram from "./widget-instaram.svg";
+
 export {
   ErrorImgIc,
   KimsuninIc,
-  GithubIc,
+  WidgetGithubIc,
   SunIc,
   MoonIc,
   NotFoundImgIc,
   SoundOnIc,
   SoundOffIc,
   BlogIc,
-  MailIc,
+  WidgetMailIc,
   NongHaengIc,
   BookIc,
   BmwIc,
@@ -44,4 +47,5 @@ export {
   PencilIc,
   HomeIc,
   BrushIc,
+  WidgetInstagram,
 };

@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import dayjs from "dayjs";
 import Calendar from "react-github-contribution-calendar";
-import { GithubIc } from "svg/index";
+import { WidgetGithubIc } from "svg/index";
 
-function GithubLinkBox() {
+function WidgetGithub() {
   const [data, setData] = React.useState<Record<string, number>>({});
   const { resolvedTheme } = useTheme();
 
@@ -59,7 +59,7 @@ function GithubLinkBox() {
     >
       <div>
         <div className={"icon-box"}>
-          <GithubIc />
+          <WidgetGithubIc />
         </div>
         <div className="text-box">
           <p>GitHub</p>
@@ -86,4 +86,4 @@ function GithubLinkBox() {
   );
 }
 
-export default GithubLinkBox;
+export default WidgetGithub;

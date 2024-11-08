@@ -6,7 +6,7 @@ import {
   BlogComment,
   BlogContentList,
   BlogContentTitle,
-  MemoBox,
+  WidgetMemo,
   BlogRenderer,
 } from "@/component";
 import { blogTitleMap } from "@/model";
@@ -58,7 +58,7 @@ function Page({ params }: { params: { slug: string[] } }) {
       <section className={visible ? "is-visible" : "is-invisible"}>
         <article>
           <div className="memo mb-[40px]">
-            <MemoBox text={title} />
+            <WidgetMemo text={title} />
           </div>
           <div>
             {listData ? (

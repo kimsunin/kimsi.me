@@ -4,7 +4,7 @@ type PropsType = {
   text: string;
 };
 
-function MemoBox({ text }: PropsType) {
+function WidgetMemo({ text }: PropsType) {
   return (
     <div className="box bg-yellow-50 dark:bg-opacity-10">
       <div>
@@ -12,13 +12,13 @@ function MemoBox({ text }: PropsType) {
           <QuotesIc />
         </div>
         <div className="text-box">
-          <h1 className="font-serif text-black/70 dark:text-white/50">
+          <h2 className="font-serif text-black/70 dark:text-white/50">
             {text}
-          </h1>
+          </h2>
         </div>
       </div>
     </div>
   );
 }
 
-export default MemoBox;
+export default WidgetMemo;

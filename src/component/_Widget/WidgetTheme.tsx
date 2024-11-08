@@ -2,7 +2,7 @@
 import { useTheme } from "next-themes";
 import { MoonIc, SunIc } from "svg/index";
 
-function ThemeSwitchBox() {
+function WidgetTheme() {
   const { setTheme, resolvedTheme } = useTheme();
 
   const switchTheme = () => {
@@ -28,4 +28,4 @@ function ThemeSwitchBox() {
   );
 }
 
-export default ThemeSwitchBox;
+export default WidgetTheme;

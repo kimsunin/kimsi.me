@@ -17,23 +17,23 @@ import BlogRenderer from "./_Blog/BlogRenderer/BlogRenderer";
 
 export { BlogContentList, BlogContentTitle, BlogComment, BlogRenderer };
 
-// box
-import LinkBox from "./_Box/LinkBox";
-import GithubLinkBox from "./_Box/GithubLinkBox";
-import ThemeSwitchBox from "./_Box/ThemeSwitchBox";
-import SoundSwitchBox from "./_Box/SoundSwitchBox";
-import MemoBox from "./_Box/Memobox";
-import MapBox from "./_Box/MapBox";
-import GaBox from "./_Box/GaBox";
+// widget
+import WidgetLink from "./_Widget/WidgetLink";
+import WidgetGithub from "./_Widget/WidgetGithub";
+import WidgetTheme from "./_Widget/WidgetTheme";
+import WidgetSound from "./_Widget/WidgetSound";
+import WidgetMemo from "./_Widget/WidgetMemo";
+import WidgetMap from "./_Widget/WidgetMap";
+import WidgetGa from "./_Widget/WidgetGa";
 
 export {
-  LinkBox,
-  GithubLinkBox,
-  ThemeSwitchBox,
-  SoundSwitchBox,
-  MemoBox,
-  MapBox,
-  GaBox,
+  WidgetLink,
+  WidgetGithub,
+  WidgetTheme,
+  WidgetSound,
+  WidgetMemo,
+  WidgetMap,
+  WidgetGa,
 };
 
 // remain

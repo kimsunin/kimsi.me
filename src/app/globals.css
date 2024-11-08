@@ -42,6 +42,12 @@ h4 {
 .icon-box {
   @apply w-[40px] h-[40px] mb-[10px] shadow-inner flex items-center overflow-hidden justify-center border rounded-lg;
 }
+.icon-box-full {
+  @apply w-[40px] h-[40px] mb-[10px] flex items-center overflow-hidden justify-center rounded-lg;
+}
+.icon-box-full > svg {
+  @apply w-full h-full;
+}
 .text-box > p {
   @apply text-start;
 }
