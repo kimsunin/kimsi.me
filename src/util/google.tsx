@@ -46,7 +46,7 @@ export async function getAnalytics() {
         ...request,
         dateRanges: [
           {
-            startDate: "2015-08-14",
+            startDate: "2024-1-1",
             endDate: "today",
           },
         ],
